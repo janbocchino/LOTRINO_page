@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Logo from "@/assets/LOGO_NEW.png";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -8,7 +11,18 @@ const Footer = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-8">
-            <a href="#top" className="text-xl font-bold tracking-tight hover:opacity-80 transition-opacity">
+            <a
+              href="#top"
+              className="flex items-center gap-3 font-bold tracking-tight hover:opacity-80 transition-opacity"
+              aria-label="Go to top"
+            >
+              <Image
+                src={Logo}
+                alt="LOTRINO logo"
+                width={16}
+                height={32}
+                className="h-8 w-8"
+              />
               <span className="gradient-text">LOTRINO</span>
             </a>
             <a

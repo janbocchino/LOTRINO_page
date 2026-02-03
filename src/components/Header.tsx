@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import Logo from "@/assets/LOGO_NEW.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,11 +32,19 @@ const Header = () => {
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo Text */}
           <Link
             href="#top"
-            className="text-xl font-bold tracking-tight transition-all duration-300 hover:opacity-80"
+            className="flex items-center gap-3 font-bold tracking-tight transition-all duration-300 hover:opacity-80"
+            aria-label="Go to top"
           >
+            <Image
+              src={Logo}
+              alt="LOTRINO logo"
+              width={18}
+              height={36}
+              priority
+              className="h-9 w-9"
+            />
             <span className="gradient-text">LOTRINO</span>
           </Link>
 

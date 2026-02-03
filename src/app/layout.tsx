@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: "LOTRINO - AI Consulting & Implementation",
   description: "We bridge the gap between ideas and action. End-to-end AI consulting, from strategy development to implementation and optimization.",
   keywords: ["AI consulting", "artificial intelligence", "AI implementation", "machine learning", "digital transformation"],
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    apple: [{ url: "/icon.png", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html id="top" lang="en" className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
