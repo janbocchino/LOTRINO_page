@@ -6,8 +6,8 @@ const Footer = () => {
 
   return (
     <footer className="relative border-t border-white/5">
-      <div className="absolute inset-0 bg-gradient-to-t from-surface to-transparent" />
-      
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-surface" />
+
       <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-8">
@@ -19,9 +19,9 @@ const Footer = () => {
               <Image
                 src={Logo}
                 alt="LOTRINO logo"
-                width={16}
+                width={24}
                 height={32}
-                className="h-8 w-8"
+                className="h-8 w-auto"
               />
               <span className="gradient-text">LOTRINO</span>
             </a>

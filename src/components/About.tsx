@@ -1,10 +1,10 @@
 const About = () => {
   return (
-    <section id="about" className="relative py-32 lg:py-40 overflow-hidden">
+    <section id="about" className="relative py-32 lg:py-40 overflow-hidden section-fade-top section-fade-bottom">
       {/* Background */}
       <div className="absolute inset-0 mesh-gradient opacity-50" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[150px]" />
-      
+      <div className="absolute -top-[100px] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[150px]" />
+
       <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Vision */}
@@ -15,11 +15,11 @@ const About = () => {
               <span className="gradient-text">cutting-edge AI</span>
             </h2>
             <p className="text-muted leading-relaxed">
-              We envision a future where businesses of all sizes harness the power of AI to unlock 
-              unprecedented growth, efficiency, and innovation. Our mission is to make AI solutions 
+              We envision a future where businesses of all sizes harness the power of AI to unlock
+              unprecedented growth, efficiency, and innovation. Our mission is to make AI solutions
               accessible, understandable, and actionable for every organization.
             </p>
-            
+
             {/* Stats */}
             <div className="grid grid-cols-2 gap-6 pt-6">
               <div className="glass rounded-xl p-6">
@@ -41,10 +41,10 @@ const About = () => {
               <span className="gradient-text">human touch</span>
             </h2>
             <p className="text-muted leading-relaxed">
-              Every solution we create is designed not just to leverage the latest AI technologies, 
+              Every solution we create is designed not just to leverage the latest AI technologies,
               but to empower your team, enhance your capabilities, and drive sustainable growth.
             </p>
-            
+
             {/* Principles */}
             <div className="space-y-4 pt-4">
               {["Transparency", "Collaboration", "Real Impact"].map((item, i) => (

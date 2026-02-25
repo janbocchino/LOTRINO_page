@@ -47,12 +47,12 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative py-32 lg:py-40 overflow-hidden">
+    <section id="contact" className="relative py-32 lg:py-40 overflow-hidden section-fade-top">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background to-surface" />
       <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-accent-secondary/10 rounded-full blur-[150px]" />
-      <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-accent/10 rounded-full blur-[120px]" />
-      
+      <div className="absolute -top-[80px] left-0 w-[400px] h-[400px] bg-accent/10 rounded-full blur-[120px]" />
+
       <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left Content */}
@@ -64,7 +64,7 @@ const Contact = () => {
                 <span className="gradient-text">transform</span> your business?
               </h2>
             </div>
-            
+
             <p className="text-muted text-lg leading-relaxed">
               Let&apos;s discuss how AI can accelerate your growth. Send us a message and we&apos;ll get back to you shortly.
             </p>
