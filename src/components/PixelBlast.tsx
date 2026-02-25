@@ -111,7 +111,7 @@ const createLiquidEffect = (texture: THREE.Texture, opts?: { strength?: number; 
     }
     `;
     return new Effect('LiquidEffect', fragment, {
-        uniforms: new Map([
+        uniforms: new Map<string, any>([
             ['uTexture', new THREE.Uniform(texture)],
             ['uStrength', new THREE.Uniform(opts?.strength ?? 0.025)],
             ['uTime', new THREE.Uniform(0)],
@@ -504,7 +504,7 @@ const PixelBlast = ({
                     'NoiseEffect',
                     `uniform float uTime; uniform float uAmount; float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1,311.7))) * 43758.5453);} void mainUv(inout vec2 uv){} void mainImage(const in vec4 inputColor,const in vec2 uv,out vec4 outputColor){ float n=hash(floor(uv*vec2(1920.0,1080.0))+floor(uTime*60.0)); float g=(n-0.5)*uAmount; outputColor=inputColor+vec4(vec3(g),0.0);} `,
                     {
-                        uniforms: new Map([
+                        uniforms: new Map<string, any>([
                             ['uTime', new THREE.Uniform(0)],
                             ['uAmount', new THREE.Uniform(noiseAmount)]
                         ])
@@ -558,7 +558,7 @@ const PixelBlast = ({
                 if (composer) {
                     if (touch) touch.update();
                     composer.passes.forEach(p => {
-                        const effs = (p as EffectPass).effects;
+                        const effs = (p as any).effects as Effect[];
                         if (effs)
                             effs.forEach(eff => {
                                 const u = eff.uniforms?.get('uTime');
@@ -587,7 +587,7 @@ const PixelBlast = ({
                 liquidEffect
             };
         } else {
-            const t = threeRef.current;
+            const t = threeRef.current!;
             t.uniforms.uShapeType.value = SHAPE_MAP[variant] ?? 0;
             t.uniforms.uPixelSize.value = pixelSize * t.renderer.getPixelRatio();
             (t.uniforms.uColor.value as THREE.Color).set(color);
