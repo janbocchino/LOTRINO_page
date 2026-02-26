@@ -179,14 +179,13 @@ const Solutions = () => {
                 {/* CTA */}
                 <div className="mt-12 lg:mt-16 flex flex-col items-center justify-center gap-5">
                     <p className="text-muted text-base">
-                        Curious which solution fits your business?
+                        Ready to transform your business?
                     </p>
                     <a
-                        id="solutions-audit-cta"
-                        href="/audit"
+                        href="#contact"
                         className="inline-flex items-center gap-3 px-10 py-4 bg-accent text-background text-base md:text-lg font-bold rounded-full shadow-[0_0_25px_rgba(121,184,186,0.3)] hover:shadow-[0_0_45px_rgba(121,184,186,0.5)] hover:-translate-y-1 transition-all duration-300"
                     >
-                        Discover Your AI Gap
+                        Get in Touch
                         <svg
                             className="w-5 h-5"
                             fill="none"
@@ -197,15 +196,9 @@ const Solutions = () => {
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                                 strokeWidth={2}
-                                d="M13 10V3L4 14h7v7l9-11h-7z"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"
                             />
                         </svg>
-                    </a>
-                    <a
-                        href="#contact"
-                        className="text-sm text-muted hover:text-accent transition-colors duration-300"
-                    >
-                        or just say hello →
                     </a>
                 </div>
             </div>
