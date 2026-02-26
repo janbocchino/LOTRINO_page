@@ -72,7 +72,7 @@ const Contact = () => {
             {/* Contact info */}
             <div className="pt-4">
               <a
-                href="mailto:jan@lotrino.com"
+                href="mailto:office@lotrino.com"
                 className="inline-flex items-center gap-3 text-foreground hover:text-accent transition-colors duration-300 group"
               >
                 <div className="w-12 h-12 rounded-full glass flex items-center justify-center group-hover:bg-accent/10 transition-colors duration-300">
@@ -80,7 +80,7 @@ const Contact = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <span className="font-medium">jan@lotrino.com</span>
+                <span className="font-medium">office@lotrino.com</span>
               </a>
             </div>
           </div>

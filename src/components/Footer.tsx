@@ -26,10 +26,10 @@ const Footer = () => {
               <span className="gradient-text">LOTRINO</span>
             </a>
             <a
-              href="mailto:jan@lotrino.com"
+              href="mailto:office@lotrino.com"
               className="link-underline text-muted hover:text-foreground transition-colors text-sm"
             >
-              jan@lotrino.com
+              office@lotrino.com
             </a>
           </div>
 
