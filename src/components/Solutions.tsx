@@ -177,17 +177,18 @@ const Solutions = () => {
                 </div>
 
                 {/* CTA */}
-                <div className="mt-12 lg:mt-16 flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <p className="text-sm text-muted">
+                <div className="mt-12 lg:mt-16 flex flex-col items-center justify-center gap-5">
+                    <p className="text-muted text-base">
                         Curious which solution fits your business?
                     </p>
                     <a
-                        href="#contact"
-                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-background text-sm font-medium rounded-full hover:bg-accent transition-colors duration-300"
+                        id="solutions-audit-cta"
+                        href="/audit"
+                        className="inline-flex items-center gap-3 px-10 py-4 bg-accent text-background text-base md:text-lg font-bold rounded-full shadow-[0_0_25px_rgba(121,184,186,0.3)] hover:shadow-[0_0_45px_rgba(121,184,186,0.5)] hover:-translate-y-1 transition-all duration-300"
                     >
-                        Let&apos;s talk
+                        Discover Your AI Gap
                         <svg
-                            className="w-3.5 h-3.5"
+                            className="w-5 h-5"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -196,9 +197,15 @@ const Solutions = () => {
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                                 strokeWidth={2}
-                                d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"
                             />
                         </svg>
+                    </a>
+                    <a
+                        href="#contact"
+                        className="text-sm text-muted hover:text-accent transition-colors duration-300"
+                    >
+                        or just say hello →
                     </a>
                 </div>
             </div>

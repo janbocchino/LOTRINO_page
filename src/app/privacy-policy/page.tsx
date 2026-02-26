@@ -177,6 +177,39 @@ export default function PrivacyPolicyPage() {
               Data Protection Authority.
             </p>
           </div>
+
+          {/* 8. AI-Powered Audit (Google Gemini API) */}
+          <div>
+            <h2 className="text-base font-medium mb-3">
+              8. AI-Powered Audit (Google Gemini API)
+            </h2>
+            <p className="text-sm text-muted leading-relaxed mb-2">
+              This website offers an AI-based audit feature powered by Google Gemini API, provided by Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.
+            </p>
+            <p className="text-sm text-muted leading-relaxed mb-2">
+              When using the audit feature, the following data may be processed:
+            </p>
+            <ul className="list-disc list-inside space-y-1 text-sm text-muted mb-2">
+              <li>User-submitted input data</li>
+              <li>Technical metadata (e.g., IP address, request data)</li>
+            </ul>
+            <p className="text-sm text-muted leading-relaxed mb-2">
+              The data is transmitted to Google servers for the purpose of generating AI-based responses.
+            </p>
+            <p className="text-sm text-muted leading-relaxed mb-2">
+              Processing is based on:
+            </p>
+            <ul className="list-disc list-inside space-y-1 text-sm text-muted mb-2">
+              <li>Art. 6(1)(b) GDPR (pre-contractual measures), or</li>
+              <li>Art. 6(1)(f) GDPR (legitimate interest in providing automated analysis tools).</li>
+            </ul>
+            <p className="text-sm text-muted leading-relaxed mb-2">
+              Data may be transferred to the United States. Google relies on appropriate safeguards under Art. 46 GDPR (e.g., Standard Contractual Clauses and/or EU–US Data Privacy Framework, if applicable).
+            </p>
+            <p className="text-sm text-muted leading-relaxed">
+              Users are advised not to submit confidential, sensitive, or personal data into the audit tool.
+            </p>
+          </div>
         </div>
       </section>
     </>
