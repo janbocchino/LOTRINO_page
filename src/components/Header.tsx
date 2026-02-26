@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/assets/LOGO_NEW.png";
 
@@ -8,9 +9,9 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#services", label: "Services" },
-    { href: "#solutions", label: "Solutions" },
-    { href: "#about", label: "The Mission" },
+    { href: "/#services", label: "Services" },
+    { href: "/#solutions", label: "Solutions" },
+    { href: "/#about", label: "The Mission" },
   ];
 
   return (
@@ -19,8 +20,8 @@ const Header = () => {
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <a
-            href="#top"
+          <Link
+            href="/"
             className="flex items-center gap-3 font-bold tracking-tight transition-all duration-300 hover:opacity-80"
             aria-label="Go to top"
           >
@@ -33,25 +34,25 @@ const Header = () => {
               className="h-9 w-auto"
             />
             <span className="gradient-text">LOTRINO</span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="link-underline text-muted hover:text-foreground transition-colors duration-300 text-sm tracking-wide"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               className="btn-glow relative px-6 py-2.5 bg-accent text-background font-medium rounded-full text-sm tracking-wide z-10"
             >
               <span className="relative z-10">Get in Touch</span>
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -90,22 +91,22 @@ const Header = () => {
           <div className="md:hidden py-6 border-t border-white/5 animate-fade-in">
             <nav className="flex flex-col gap-4">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="text-muted hover:text-foreground transition-colors duration-300 text-sm tracking-wide py-2"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
-              <a
-                href="#contact"
+              <Link
+                href="/#contact"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="mt-2 px-6 py-3 bg-accent text-background font-medium rounded-full text-sm tracking-wide text-center"
               >
                 Get in Touch
-              </a>
+              </Link>
             </nav>
           </div>
         )}
