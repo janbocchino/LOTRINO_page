@@ -51,7 +51,7 @@ const solutions: Solution[] = [
     },
     {
         title: "Custom Solutions",
-        tagline: "Bespoke AI solutions designed specifically for your unique business challenges.",
+        tagline: "AI solutions designed specifically for your unique business challenges.",
         icon: (
             <svg
                 className="w-8 h-8"
@@ -71,7 +71,7 @@ const solutions: Solution[] = [
     },
     {
         title: "E-Commerce Agents",
-        tagline: "Intelligent automation that turns browsers into buyers",
+        tagline: "E-Commerce OS that replaces manual data hunting with AI-driven dashboards, automated alerts, and autonomous execution",
         icon: (
             <svg
                 className="w-8 h-8"
