@@ -76,7 +76,7 @@ const solutions: Solution[] = [
     },
     {
         title: "E-Commerce Agents",
-        tagline: "E-Commerce OS that replaces manual data hunting with AI-driven dashboards, automated alerts, and autonomous execution",
+        tagline: "AI-driven E-Commerce OS that handles your online sales",
         icon: (
             <svg
                 className="w-8 h-8"
