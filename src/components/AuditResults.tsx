@@ -241,7 +241,9 @@ const AuditResults = ({ data, email }: AuditResultsProps) => {
                     </p>
                     <a
                         id="audit-cta-book"
-                        href="/#contact"
+                        href={process.env.NEXT_PUBLIC_BOOK_A_CALL_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-background font-semibold rounded-xl text-sm tracking-wide hover:shadow-[0_0_30px_rgba(121,184,186,0.4)] hover:-translate-y-0.5 transition-all duration-300"
                     >
                         Bridge the Gap — Book a Call with Jan
