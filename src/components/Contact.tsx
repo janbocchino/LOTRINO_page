@@ -2,6 +2,9 @@
 
 import { useState, FormEvent } from "react";
 
+const inputClass =
+  "w-full rounded-xl border border-border bg-background/50 px-4 py-3.5 text-base text-foreground placeholder:text-muted/50 outline-none transition-all duration-300 focus:border-accent focus:ring-1 focus:ring-accent/50 focus-visible:ring-2 focus-visible:ring-accent sm:text-base";
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -47,36 +50,45 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative py-32 lg:py-40 overflow-hidden section-fade-top">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background to-surface" />
-      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-accent-secondary/10 rounded-full blur-[150px]" />
-      <div className="absolute -top-[80px] left-0 w-[400px] h-[400px] bg-accent/10 rounded-full blur-[120px]" />
+    <section
+      id="contact"
+      aria-labelledby="contact-heading"
+      className="section-fade-top relative overflow-hidden bg-neutral-950 py-28 lg:py-36"
+    >
+      <div className="absolute inset-0 bg-gradient-to-b from-background to-surface" aria-hidden />
+      <div
+        className="absolute bottom-0 right-0 h-[600px] w-[600px] rounded-full bg-accent-secondary/10 blur-[150px]"
+        aria-hidden
+      />
+      <div
+        className="absolute -top-[80px] left-0 h-[400px] w-[400px] rounded-full bg-accent/10 blur-[120px]"
+        aria-hidden
+      />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-          {/* Left Content */}
+      <div className="relative z-10 mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
           <div className="space-y-8">
             <div>
-              <span className="text-accent text-xs tracking-widest uppercase">Contact</span>
-              <h2 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
-                Ready to{" "}
-                <span className="gradient-text">transform</span> your business?
+              <span className="text-xs uppercase tracking-widest text-accent">Contact</span>
+              <h2
+                id="contact-heading"
+                className="font-heading mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-foreground md:text-5xl lg:text-6xl"
+              >
+                Ready to <span className="gradient-text">transform</span> your business?
               </h2>
             </div>
 
-            <p className="text-muted text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed text-muted">
               Let&apos;s discuss how AI can accelerate your growth. Send us a message and we&apos;ll get back to you shortly.
             </p>
 
-            {/* Contact info */}
             <div className="pt-4">
               <a
                 href="mailto:office@lotrino.com"
-                className="inline-flex items-center gap-3 text-foreground hover:text-accent transition-colors duration-300 group"
+                className="group inline-flex min-h-11 items-center gap-3 rounded-lg text-foreground outline-none ring-offset-2 ring-offset-neutral-950 transition-colors duration-300 hover:text-accent focus-visible:ring-2 focus-visible:ring-accent"
               >
-                <div className="w-12 h-12 rounded-full glass flex items-center justify-center group-hover:bg-accent/10 transition-colors duration-300">
-                  <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full glass transition-colors duration-300 group-hover:bg-accent/10">
+                  <svg className="h-5 w-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
@@ -85,57 +97,61 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Form */}
           <div className="gradient-border p-8 lg:p-10">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2 text-muted">
+                <label htmlFor="name" className="mb-2 block text-sm font-medium text-muted">
                   Name
                 </label>
                 <input
                   type="text"
                   id="name"
+                  name="name"
+                  autoComplete="name"
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3.5 bg-background/50 border border-border rounded-xl focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/50 transition-all duration-300 text-foreground placeholder:text-muted/50"
+                  className={inputClass}
                   placeholder="Your name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2 text-muted">
+                <label htmlFor="email" className="mb-2 block text-sm font-medium text-muted">
                   Email
                 </label>
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  autoComplete="email"
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3.5 bg-background/50 border border-border rounded-xl focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/50 transition-all duration-300 text-foreground placeholder:text-muted/50"
+                  className={inputClass}
                   placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2 text-muted">
+                <label htmlFor="message" className="mb-2 block text-sm font-medium text-muted">
                   Message
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   required
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3.5 bg-background/50 border border-border rounded-xl focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/50 transition-all duration-300 text-foreground placeholder:text-muted/50 resize-none"
+                  className={`${inputClass} resize-none`}
                   placeholder="Tell us about your project..."
                 />
               </div>
 
               {status === "success" && (
-                <div className="p-4 rounded-xl bg-accent/10 border border-accent/20 text-accent text-sm flex items-center gap-3">
-                  <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center gap-3 rounded-xl border border-accent/20 bg-accent/10 p-4 text-sm text-accent">
+                  <svg className="h-5 w-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   Thank you! We&apos;ll get back to you soon.
@@ -143,7 +159,7 @@ const Contact = () => {
               )}
 
               {status === "error" && (
-                <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-sm">
+                <div className="rounded-xl border border-red-500/20 bg-red-500/10 p-4 text-sm text-red-400">
                   {errorMessage || "Something went wrong. Please try again."}
                 </div>
               )}
@@ -151,13 +167,17 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="btn-glow relative w-full px-8 py-4 bg-accent text-background font-semibold rounded-xl text-sm tracking-wide disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 z-10"
+                className="btn-glow relative z-10 flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-accent px-8 py-4 text-sm font-semibold tracking-wide text-background outline-none ring-offset-2 ring-offset-neutral-950 transition disabled:cursor-not-allowed disabled:opacity-50 focus-visible:ring-2 focus-visible:ring-accent"
               >
                 {status === "loading" ? (
                   <>
-                    <svg className="relative z-10 animate-spin h-5 w-5" fill="none" viewBox="0 0 24 24">
+                    <svg className="relative z-10 h-5 w-5 animate-spin" fill="none" viewBox="0 0 24 24" aria-hidden>
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                      />
                     </svg>
                     <span className="relative z-10">Sending...</span>
                   </>

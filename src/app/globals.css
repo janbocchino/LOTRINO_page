@@ -23,6 +23,7 @@
   --color-muted: var(--muted);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
@@ -416,8 +417,8 @@ body {
   pointer-events: none;
 }
 
-/* Card reveal on hover */
-.group:hover::before {
+/* Card reveal on hover (timeline items only — avoid leaking to any .group) */
+.timeline-item:hover::before {
   opacity: 1;
   transform: scale(1);
   background: rgba(255, 255, 255, 0.04);
@@ -517,12 +518,12 @@ body {
   box-shadow: 0 8px 24px rgba(121, 184, 186, 0.3);
 }
 
-/* Title lift on hover */
+/* Title lift on hover (timeline items only — not every .group card) */
 .timeline-item h3 {
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
 }
 
-.group:hover h3 {
+.timeline-item:hover h3 {
   transform: translateY(-2px);
 }
 

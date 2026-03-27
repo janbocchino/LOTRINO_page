@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Imprint | LOTRINO",
   description: "Legal imprint information for LOTRINO.",
+  alternates: { canonical: "/imprint" },
 };
 
 export default function ImprintPage() {

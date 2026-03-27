@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy | LOTRINO",
   description: "Privacy policy information for LOTRINO.",
+  alternates: { canonical: "/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {
@@ -99,7 +100,7 @@ export default function PrivacyPolicyPage() {
               <li>Message content</li>
             </ul>
             <p className="text-sm text-muted leading-relaxed mb-2">
-              The data is transmitted via Web3Forms' servers before being
+              The data is transmitted via Web3Forms&apos; servers before being
               forwarded to the website operator.
             </p>
             <p className="text-sm text-muted leading-relaxed mb-2">

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms & Conditions | LOTRINO",
   description: "Terms and conditions for software development and IT services (B2B).",
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {
