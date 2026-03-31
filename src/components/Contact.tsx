@@ -1,11 +1,13 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { useTranslations } from "next-intl";
 
 const inputClass =
   "w-full rounded-xl border border-border bg-background/50 px-4 py-3.5 text-base text-foreground placeholder:text-muted/50 outline-none transition-all duration-300 focus:border-accent focus:ring-1 focus:ring-accent/50 focus-visible:ring-2 focus-visible:ring-accent sm:text-base";
 
 const Contact = () => {
+  const t = useTranslations("contact");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -31,7 +33,7 @@ const Contact = () => {
           name: formData.name,
           email: formData.email,
           message: formData.message,
-          from_name: "LOTRINO Website",
+          from_name: t("fromName"),
         }),
       });
 
@@ -45,7 +47,7 @@ const Contact = () => {
       }
     } catch (error) {
       setStatus("error");
-      setErrorMessage(error instanceof Error ? error.message : "Failed to send message");
+      setErrorMessage(error instanceof Error ? error.message : t("errorGeneric"));
     }
   };
 
@@ -69,18 +71,18 @@ const Contact = () => {
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
           <div className="space-y-8">
             <div>
-              <span className="text-xs uppercase tracking-widest text-accent">Contact</span>
+              <span className="text-xs uppercase tracking-widest text-accent">{t("label")}</span>
               <h2
                 id="contact-heading"
                 className="font-heading mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-foreground md:text-5xl lg:text-6xl"
               >
-                Ready to <span className="gradient-text">transform</span> your business?
+                {t("titleBefore")}
+                <span className="gradient-text">{t("titleHighlight")}</span>
+                {t("titleAfter")}
               </h2>
             </div>
 
-            <p className="text-lg leading-relaxed text-muted">
-              Let&apos;s discuss how AI can accelerate your growth. Send us a message and we&apos;ll get back to you shortly.
-            </p>
+            <p className="text-lg leading-relaxed text-muted">{t("intro")}</p>
 
             <div className="pt-4">
               <a
@@ -101,7 +103,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="mb-2 block text-sm font-medium text-muted">
-                  Name
+                  {t("name")}
                 </label>
                 <input
                   type="text"
@@ -112,13 +114,13 @@ const Contact = () => {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className={inputClass}
-                  placeholder="Your name"
+                  placeholder={t("placeholderName")}
                 />
               </div>
 
               <div>
                 <label htmlFor="email" className="mb-2 block text-sm font-medium text-muted">
-                  Email
+                  {t("email")}
                 </label>
                 <input
                   type="email"
@@ -129,13 +131,13 @@ const Contact = () => {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className={inputClass}
-                  placeholder="your@email.com"
+                  placeholder={t("placeholderEmail")}
                 />
               </div>
 
               <div>
                 <label htmlFor="message" className="mb-2 block text-sm font-medium text-muted">
-                  Message
+                  {t("message")}
                 </label>
                 <textarea
                   id="message"
@@ -145,7 +147,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className={`${inputClass} resize-none`}
-                  placeholder="Tell us about your project..."
+                  placeholder={t("placeholderMessage")}
                 />
               </div>
 
@@ -154,13 +156,13 @@ const Contact = () => {
                   <svg className="h-5 w-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  Thank you! We&apos;ll get back to you soon.
+                  {t("success")}
                 </div>
               )}
 
               {status === "error" && (
                 <div className="rounded-xl border border-red-500/20 bg-red-500/10 p-4 text-sm text-red-400">
-                  {errorMessage || "Something went wrong. Please try again."}
+                  {errorMessage || t("errorGeneric")}
                 </div>
               )}
 
@@ -179,10 +181,10 @@ const Contact = () => {
                         d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                       />
                     </svg>
-                    <span className="relative z-10">Sending...</span>
+                    <span className="relative z-10">{t("sending")}</span>
                   </>
                 ) : (
-                  <span className="relative z-10">Send Message</span>
+                  <span className="relative z-10">{t("submit")}</span>
                 )}
               </button>
             </form>

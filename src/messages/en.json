@@ -1,0 +1,174 @@
+{
+  "common": {
+    "skipToMain": "Skip to main content",
+    "languageSwitch": "Language"
+  },
+  "nav": {
+    "homeAria": "LOTRINO home",
+    "services": "Services",
+    "solutions": "Solutions",
+    "mission": "The Mission",
+    "useCases": "Use Cases",
+    "team": "Team",
+    "getInTouch": "Get in Touch",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "footer": {
+    "backToTop": "Back to top",
+    "connect": "Connect",
+    "legal": "Legal",
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "copyright": "© {year} Lotrino. All rights reserved."
+  },
+  "meta": {
+    "homeTitle": "AI Consulting & Implementation",
+    "homeDescription": "We bridge the gap between ideas and action. End-to-end AI consulting, from strategy development to implementation and optimization.",
+    "keywords": "AI consulting, artificial intelligence, AI implementation, machine learning, digital transformation"
+  },
+  "hero": {
+    "badge": "AI Consulting & Implementation",
+    "titleLine1": "Transform Your",
+    "titleLine2": "Business with AI",
+    "subtitle": "Everything we need to transform the world is already out there. We bridge the gap between ideas and action - because real change starts when you just do it.",
+    "cta": "Start Your Transformation"
+  },
+  "services": {
+    "label": "Our Services",
+    "headingBefore": "From idea to",
+    "headingMuted": "implementation",
+    "intro": "A clear path from strategy through build, integration, and ongoing optimization — so AI delivers measurable value, not shelf-ware.",
+    "outro": "Ready to transform your business with AI?",
+    "cta": "Let's talk!",
+    "steps": {
+      "strategy": {
+        "title": "Strategy",
+        "description": "AI roadmap aligned with your business goals"
+      },
+      "development": {
+        "title": "Development",
+        "description": "Custom AI solutions built for your specific challenges"
+      },
+      "integration": {
+        "title": "Integration",
+        "description": "Seamless deployment into your existing infrastructure and workflows"
+      },
+      "optimization": {
+        "title": "Optimization",
+        "description": "Continuous refinement for maximum performance"
+      }
+    }
+  },
+  "solutions": {
+    "label": "Our Solutions",
+    "headingBefore": "AI Agents, tailored for",
+    "headingMuted": "your business",
+    "outro": "Ready to transform your business?",
+    "cta": "Get in Touch",
+    "items": {
+      "seo-agents": {
+        "title": "SEO Agents",
+        "tagline": "Dominate search rankings with AI that writes and optimizes pages in lightning speed"
+      },
+      "social-media-agents": {
+        "title": "Social Media Agents",
+        "tagline": "Let AI craft, schedule, and amplify your social presence"
+      },
+      "internal-processes": {
+        "title": "Agents for Internal Processes",
+        "tagline": "Streamline operations with AI that works around the clock"
+      },
+      "ecommerce-agents": {
+        "title": "E-Commerce Agents",
+        "tagline": "AI-driven E-Commerce OS that handles your online sales"
+      },
+      "custom-solutions": {
+        "title": "Custom Solutions",
+        "tagline": "AI solutions designed specifically for your unique business challenges."
+      }
+    },
+    "schemaName": "AI agent solutions",
+    "schemaDescription": "AI agents and custom solutions for SEO, social media, operations, and e-commerce."
+  },
+  "about": {
+    "visionLabel": "Our Vision",
+    "visionTitleBefore": "Democratizing access to ",
+    "visionTitleHighlight": "cutting-edge AI",
+    "visionTitleAfter": "",
+    "visionLead": "We envision a future where businesses of all sizes harness the power of AI to unlock unprecedented growth, efficiency, and innovation. Our mission is to make AI solutions accessible, understandable, and actionable for every organization.",
+    "statHuman": "Human-Centered",
+    "statPoss": "Possibilities",
+    "approachLabel": "Our Approach",
+    "approachTitleBefore": "Technical expertise meets ",
+    "approachTitleHighlight": "human touch",
+    "approachTitleAfter": "",
+    "approachLead": "Every solution we create is designed not just to leverage the latest AI technologies, but to empower your team, enhance your capabilities, and drive sustainable growth.",
+    "values": ["Transparency", "Collaboration", "Real Impact"]
+  },
+  "contact": {
+    "label": "Contact",
+    "titleBefore": "Ready to ",
+    "titleHighlight": "transform",
+    "titleAfter": " your business?",
+    "intro": "Let's discuss how AI can accelerate your growth. Send us a message and we'll get back to you shortly.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "placeholderName": "Your name",
+    "placeholderEmail": "your@email.com",
+    "placeholderMessage": "Tell us about your project...",
+    "success": "Thank you! We'll get back to you soon.",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "sending": "Sending...",
+    "submit": "Send Message",
+    "fromName": "LOTRINO Website"
+  },
+  "team": {
+    "title": "Team",
+    "intro": "LOTRINO is built by two co-founders who combine strategic vision with hands-on delivery - so AI stays practical, understandable, and built to last.",
+    "role": "Co-founder",
+    "janBio": "Focuses on product direction, clarity of experience, and helping clients see what AI can do in practice.",
+    "mattisBio": "Focuses on turning strategy into delivery: robust implementation and lasting operational value.",
+    "janAlt": "Portrait of Jan Bocchino, co-founder of LOTRINO.",
+    "mattisAlt": "Portrait of Mattis Scherbacher, co-founder of LOTRINO, at an outdoor cafe."
+  },
+  "useCasesPage": {
+    "title": "Use Cases",
+    "description": "Industry-specific use cases: recruiting, logistics, healthcare, law firms, facility management — and what can realistically be automated.",
+    "label": "Use cases",
+    "heading": "Use Cases",
+    "intro": "Where repetitive work piles up most — and automation and AI levers that are realistic. Choose an industry for details.",
+    "readMore": "Read more",
+    "metaTitle": "Use Cases",
+    "metaDescription": "Industry-specific use cases: recruiting, logistics, healthcare, law firms, facility management — and what can realistically be automated."
+  },
+  "industryPage": {
+    "breadcrumb": "Use Cases",
+    "industryBadge": "Industry",
+    "manualHeading": "Typical manual & repetitive tasks",
+    "whyHeading": "Why this is unpleasant",
+    "autoHeading": "Automation potential",
+    "back": "All use cases",
+    "metaSuffix": "Use Cases"
+  },
+  "imprint": {
+    "title": "Imprint",
+    "description": "Legal imprint information for LOTRINO.",
+    "contact": "Contact",
+    "address": "Address",
+    "businessLicense": "Business License",
+    "chamber": "Wirtschaftskammer Wien",
+    "issuingAuthority": "Issuing authority: MBA 6/7"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "Privacy policy information for LOTRINO."
+  },
+  "terms": {
+    "title": "Terms & Conditions",
+    "subtitle": "(Software Development & IT Services – B2B)",
+    "description": "Terms and conditions for software development and IT services (B2B)."
+  }
+}

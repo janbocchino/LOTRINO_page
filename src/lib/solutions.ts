@@ -1,3 +1,4 @@
+import type { AppLocale } from "@/i18n/routing";
 import { siteUrl } from "@/lib/site";
 
 export type SolutionId =
@@ -14,7 +15,7 @@ export type SolutionItem = {
   colSpan2?: boolean;
 };
 
-export const solutionsData: SolutionItem[] = [
+const solutionsDataEn: SolutionItem[] = [
   {
     id: "seo-agents",
     title: "SEO Agents",
@@ -45,14 +46,55 @@ export const solutionsData: SolutionItem[] = [
   },
 ];
 
+const solutionsDataDe: SolutionItem[] = [
+  {
+    id: "seo-agents",
+    title: "SEO-Agenten",
+    tagline:
+      "Dominieren Sie die Suchergebnisse mit KI, die Seiten blitzschnell schreibt und optimiert",
+  },
+  {
+    id: "social-media-agents",
+    title: "Social-Media-Agenten",
+    tagline: "KI erstellt, plant und verstärkt Ihre Social-Media-Präsenz",
+  },
+  {
+    id: "internal-processes",
+    title: "Agenten für interne Prozesse",
+    tagline: "Verschlanken Sie Abläufe mit KI, die rund um die Uhr arbeitet",
+  },
+  {
+    id: "ecommerce-agents",
+    title: "E-Commerce-Agenten",
+    tagline: "KI-gestütztes E-Commerce-System für Ihren Online-Vertrieb",
+  },
+  {
+    id: "custom-solutions",
+    title: "Individuelle Lösungen",
+    tagline:
+      "KI-Lösungen, genau auf Ihre spezifischen Business-Herausforderungen zugeschnitten.",
+    colSpan2: true,
+  },
+];
+
+export function getSolutionsData(locale: AppLocale): SolutionItem[] {
+  return locale === "de" ? solutionsDataDe : solutionsDataEn;
+}
+
 /** JSON-LD fragment for merging into @graph (ItemList of offered solutions). */
-export function getSolutionsItemListSchema() {
+export function getSolutionsItemListSchema(locale: AppLocale) {
+  const solutionsData = getSolutionsData(locale);
+  const name = locale === "de" ? "KI-Agenten-Lösungen" : "AI agent solutions";
+  const description =
+    locale === "de"
+      ? "KI-Agenten und individuelle Lösungen für SEO, Social Media, Operations und E-Commerce."
+      : "AI agents and custom solutions for SEO, social media, operations, and e-commerce.";
+
   return {
     "@type": "ItemList" as const,
     "@id": `${siteUrl}/#solutions-list`,
-    name: "AI agent solutions",
-    description:
-      "AI agents and custom solutions for SEO, social media, operations, and e-commerce.",
+    name,
+    description,
     numberOfItems: solutionsData.length,
     itemListElement: solutionsData.map((s, i) => ({
       "@type": "ListItem" as const,

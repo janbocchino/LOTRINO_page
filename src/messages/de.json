@@ -1,0 +1,174 @@
+{
+  "common": {
+    "skipToMain": "Zum Hauptinhalt springen",
+    "languageSwitch": "Sprache"
+  },
+  "nav": {
+    "homeAria": "LOTRINO Startseite",
+    "services": "Leistungen",
+    "solutions": "Lösungen",
+    "mission": "Die Mission",
+    "useCases": "Anwendungsfälle",
+    "team": "Team",
+    "getInTouch": "Kontakt",
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen"
+  },
+  "footer": {
+    "backToTop": "Nach oben",
+    "connect": "Kontakt",
+    "legal": "Rechtliches",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "copyright": "© {year} Lotrino. Alle Rechte vorbehalten."
+  },
+  "meta": {
+    "homeTitle": "KI-Beratung & Umsetzung",
+    "homeDescription": "Wir schlagen die Brücke zwischen Ideen und Umsetzung. End-to-End-KI-Beratung – von der Strategie über die Implementierung bis zur Optimierung.",
+    "keywords": "KI-Beratung, künstliche Intelligenz, KI-Implementierung, maschinelles Lernen, digitale Transformation"
+  },
+  "hero": {
+    "badge": "KI-Beratung & Umsetzung",
+    "titleLine1": "Transformieren Sie",
+    "titleLine2": "Ihr Business mit KI",
+    "subtitle": "Alles, was wir brauchen, um die Welt zu verändern, gibt es schon. Wir schlagen die Brücke zwischen Ideen und Umsetzung – weil echte Veränderung beginnt, wenn man sie einfach angeht.",
+    "cta": "Transformation starten"
+  },
+  "services": {
+    "label": "Unsere Leistungen",
+    "headingBefore": "Von der Idee zur",
+    "headingMuted": "Umsetzung",
+    "intro": "Ein klarer Weg von Strategie über Build und Integration bis zur laufenden Optimierung – damit KI messbaren Wert liefert, keine Schaufensterware.",
+    "outro": "Bereit, Ihr Business mit KI zu transformieren?",
+    "cta": "Sprechen wir!",
+    "steps": {
+      "strategy": {
+        "title": "Strategie",
+        "description": "KI-Roadmap, abgestimmt auf Ihre Geschäftsziele"
+      },
+      "development": {
+        "title": "Entwicklung",
+        "description": "Maßgeschneiderte KI-Lösungen für Ihre konkreten Herausforderungen"
+      },
+      "integration": {
+        "title": "Integration",
+        "description": "Nahtlose Einbindung in Ihre bestehende Infrastruktur und Workflows"
+      },
+      "optimization": {
+        "title": "Optimierung",
+        "description": "Kontinuierliche Verfeinerung für maximale Performance"
+      }
+    }
+  },
+  "solutions": {
+    "label": "Unsere Lösungen",
+    "headingBefore": "KI-Agenten, passend zu",
+    "headingMuted": "Ihrem Business",
+    "outro": "Bereit, Ihr Business zu transformieren?",
+    "cta": "Kontakt aufnehmen",
+    "items": {
+      "seo-agents": {
+        "title": "SEO-Agenten",
+        "tagline": "Dominieren Sie die Suchergebnisse mit KI, die Seiten blitzschnell schreibt und optimiert"
+      },
+      "social-media-agents": {
+        "title": "Social-Media-Agenten",
+        "tagline": "KI erstellt, plant und verstärkt Ihre Social-Media-Präsenz"
+      },
+      "internal-processes": {
+        "title": "Agenten für interne Prozesse",
+        "tagline": "Verschlanken Sie Abläufe mit KI, die rund um die Uhr arbeitet"
+      },
+      "ecommerce-agents": {
+        "title": "E-Commerce-Agenten",
+        "tagline": "KI-gestütztes E-Commerce-System für Ihren Online-Vertrieb"
+      },
+      "custom-solutions": {
+        "title": "Individuelle Lösungen",
+        "tagline": "KI-Lösungen, genau auf Ihre spezifischen Business-Herausforderungen zugeschnitten."
+      }
+    },
+    "schemaName": "KI-Agenten-Lösungen",
+    "schemaDescription": "KI-Agenten und individuelle Lösungen für SEO, Social Media, Operations und E-Commerce."
+  },
+  "about": {
+    "visionLabel": "Unsere Vision",
+    "visionTitleBefore": "Zugang zu ",
+    "visionTitleHighlight": "modernster KI",
+    "visionTitleAfter": " für alle demokratisieren",
+    "visionLead": "Wir stellen uns eine Zukunft vor, in der Unternehmen jeder Größe die Kraft der KI nutzen, um Wachstum, Effizienz und Innovation zu entfalten. Unsere Mission: KI-Lösungen zugänglich, verständlich und umsetzbar zu machen.",
+    "statHuman": "Mensch im Mittelpunkt",
+    "statPoss": "Möglichkeiten",
+    "approachLabel": "Unser Ansatz",
+    "approachTitleBefore": "Technische Expertise trifft ",
+    "approachTitleHighlight": "Menschlichkeit",
+    "approachTitleAfter": "",
+    "approachLead": "Jede Lösung nutzt nicht nur die neueste KI, sondern stärkt Ihr Team, erweitert Ihre Fähigkeiten und fördert nachhaltiges Wachstum.",
+    "values": ["Transparenz", "Zusammenarbeit", "Echte Wirkung"]
+  },
+  "contact": {
+    "label": "Kontakt",
+    "titleBefore": "Bereit, Ihr Business zu ",
+    "titleHighlight": "transformieren",
+    "titleAfter": "?",
+    "intro": "Lassen Sie uns besprechen, wie KI Ihr Wachstum beschleunigen kann. Schreiben Sie uns – wir melden uns zeitnah.",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "placeholderName": "Ihr Name",
+    "placeholderEmail": "ihre@email.com",
+    "placeholderMessage": "Erzählen Sie uns von Ihrem Projekt …",
+    "success": "Danke! Wir melden uns bald.",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte erneut versuchen.",
+    "sending": "Wird gesendet …",
+    "submit": "Nachricht senden",
+    "fromName": "LOTRINO Website"
+  },
+  "team": {
+    "title": "Team",
+    "intro": "LOTRINO wird von zwei Gründern getragen – strategische Vision und Hands-on-Umsetzung, damit KI praktisch, verständlich und nachhaltig bleibt.",
+    "role": "Mitgründer",
+    "janBio": "Fokus auf Produktrichtung, klare Experience und darauf, was KI in der Praxis leisten kann.",
+    "mattisBio": "Fokus auf die Umsetzung: robuste Implementierung und dauerhafter operativer Nutzen.",
+    "janAlt": "Porträt von Jan Bocchino, Mitgründer von LOTRINO.",
+    "mattisAlt": "Porträt von Mattis Scherbacher, Mitgründer von LOTRINO, in einem Café im Freien."
+  },
+  "useCasesPage": {
+    "title": "Anwendungsfälle",
+    "description": "Branchenspezifische Use Cases: Recruiting, Logistik, Medizin, Kanzleien, Facility Management — und was sich realistisch automatisieren lässt.",
+    "label": "Anwendungsfälle",
+    "heading": "Use Cases",
+    "intro": "Wo sich wiederkehrende Arbeit besonders staut — und welche Hebel Automatisierung und KI realistisch bieten. Wähle eine Branche für Details.",
+    "readMore": "Mehr lesen",
+    "metaTitle": "Use Cases",
+    "metaDescription": "Branchenspezifische Use Cases: Recruiting, Logistik, Medizin, Kanzleien, Facility Management — und was sich realistisch automatisieren lässt."
+  },
+  "industryPage": {
+    "breadcrumb": "Use Cases",
+    "industryBadge": "Branche",
+    "manualHeading": "Typisch manuelle & repetitive Tätigkeiten",
+    "whyHeading": "Warum das unangenehm ist",
+    "autoHeading": "Automatisierungspotenziale",
+    "back": "Alle Use Cases",
+    "metaSuffix": "Use Cases"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "description": "Impressum von LOTRINO.",
+    "contact": "Kontakt",
+    "address": "Adresse",
+    "businessLicense": "Gewerbeberechtigung",
+    "chamber": "Wirtschaftskammer Wien",
+    "issuingAuthority": "Zuständige Behörde: MBA 6/7"
+  },
+  "privacy": {
+    "title": "Datenschutz",
+    "description": "Datenschutzerklärung von LOTRINO."
+  },
+  "terms": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "subtitle": "(Softwareentwicklung & IT-Dienstleistungen – B2B)",
+    "description": "AGB für Softwareentwicklung und IT-Dienstleistungen (B2B)."
+  }
+}

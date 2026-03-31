@@ -1,7 +1,11 @@
 "use client";
 
+import { useMemo } from "react";
+import { useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "motion/react";
-import { serviceSteps } from "@/lib/services";
+import { getServiceSteps } from "@/lib/services";
+import type { AppLocale } from "@/i18n/routing";
 
 function ServiceIcon({ id, className }: { id: string; className?: string }) {
   const c = className ?? "h-7 w-7";
@@ -37,6 +41,9 @@ function ServiceIcon({ id, className }: { id: string; className?: string }) {
 
 const Services = () => {
   const reduceMotion = useReducedMotion();
+  const locale = useLocale() as AppLocale;
+  const t = useTranslations("services");
+  const serviceSteps = useMemo(() => getServiceSteps(locale), [locale]);
 
   return (
     <section
@@ -53,17 +60,15 @@ const Services = () => {
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span className="text-xs font-medium uppercase tracking-widest text-accent">Our Services</span>
+            <span className="text-xs font-medium uppercase tracking-widest text-accent">{t("label")}</span>
             <h2
               id="services-heading"
               className="font-heading mt-3 text-2xl font-semibold tracking-tight text-foreground md:text-3xl lg:text-4xl"
             >
-              From idea to <span className="text-muted">implementation</span>
+              {t("headingBefore")}{" "}
+              <span className="text-muted">{t("headingMuted")}</span>
             </h2>
-            <p className="mt-4 max-w-md text-sm leading-relaxed text-muted lg:text-base">
-              A clear path from strategy through build, integration, and ongoing optimization — so AI
-              delivers measurable value, not shelf-ware.
-            </p>
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-muted lg:text-base">{t("intro")}</p>
           </motion.div>
 
           <div className="relative lg:col-span-7">
@@ -122,12 +127,12 @@ const Services = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.45 }}
         >
-          <p className="text-center text-sm text-muted">Ready to transform your business with AI?</p>
+          <p className="text-center text-sm text-muted">{t("outro")}</p>
           <a
             href="#contact"
             className="inline-flex min-h-11 items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-background outline-none ring-offset-2 ring-offset-neutral-950 transition-colors duration-300 hover:bg-accent focus-visible:ring-2 focus-visible:ring-accent"
           >
-            Let&apos;s talk!
+            {t("cta")}
             <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

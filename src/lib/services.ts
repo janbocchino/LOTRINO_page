@@ -1,3 +1,5 @@
+import type { AppLocale } from "@/i18n/routing";
+
 export type ServiceStep = {
   id: string;
   number: string;
@@ -5,7 +7,7 @@ export type ServiceStep = {
   description: string;
 };
 
-export const serviceSteps: ServiceStep[] = [
+const serviceStepsEn: ServiceStep[] = [
   {
     id: "strategy",
     number: "01",
@@ -32,3 +34,34 @@ export const serviceSteps: ServiceStep[] = [
     description: "Continuous refinement for maximum performance",
   },
 ];
+
+const serviceStepsDe: ServiceStep[] = [
+  {
+    id: "strategy",
+    number: "01",
+    title: "Strategie",
+    description: "KI-Roadmap, abgestimmt auf Ihre Geschäftsziele",
+  },
+  {
+    id: "development",
+    number: "02",
+    title: "Entwicklung",
+    description: "Maßgeschneiderte KI-Lösungen für Ihre konkreten Herausforderungen",
+  },
+  {
+    id: "integration",
+    number: "03",
+    title: "Integration",
+    description: "Nahtlose Einbindung in Ihre bestehende Infrastruktur und Workflows",
+  },
+  {
+    id: "optimization",
+    number: "04",
+    title: "Optimierung",
+    description: "Kontinuierliche Verfeinerung für maximale Performance",
+  },
+];
+
+export function getServiceSteps(locale: AppLocale): ServiceStep[] {
+  return locale === "de" ? serviceStepsDe : serviceStepsEn;
+}
