@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { absoluteUrl } from "@/lib/site";
+import { absoluteUrl, defaultShareMetadata, hreflangAlternates } from "@/lib/site";
 import type { AppLocale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
 
@@ -11,16 +11,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale = loc as AppLocale;
   if (!routing.locales.includes(locale)) return {};
   const t = await getTranslations({ locale, namespace: "imprint" });
+  const title = `${t("title")} | LOTRINO`;
+  const description = t("description");
   return {
-    title: `${t("title")} | LOTRINO`,
-    description: t("description"),
+    title,
+    description,
     alternates: {
       canonical: absoluteUrl(locale, "/imprint"),
-      languages: {
-        en: absoluteUrl("en", "/imprint"),
-        de: absoluteUrl("de", "/imprint"),
-      },
+      languages: hreflangAlternates("/imprint"),
     },
+    ...defaultShareMetadata(locale, title, description),
   };
 }
 

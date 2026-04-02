@@ -7,7 +7,13 @@ import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getSolutionsItemListSchema } from "@/lib/solutions";
-import { siteName, siteUrl, absoluteUrl } from "@/lib/site";
+import {
+  siteName,
+  siteUrl,
+  absoluteUrl,
+  hreflangAlternates,
+  openGraphImageUrl,
+} from "@/lib/site";
 import { routing, type AppLocale } from "@/i18n/routing";
 
 const geistSans = Geist({
@@ -60,10 +66,7 @@ export async function generateMetadata({
     },
     alternates: {
       canonical: absoluteUrl(locale, "/"),
-      languages: {
-        en: absoluteUrl("en", "/"),
-        de: absoluteUrl("de", "/"),
-      },
+      languages: hreflangAlternates("/"),
     },
     openGraph: {
       type: "website",
@@ -73,11 +76,13 @@ export async function generateMetadata({
       siteName,
       title,
       description,
+      images: [{ url: openGraphImageUrl(locale), width: 1200, height: 630, alt: title }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: [openGraphImageUrl(locale)],
     },
   };
 }
@@ -103,8 +108,25 @@ export default async function LocaleLayout({
     "@id": `${siteUrl}/#organization`,
     name: siteName,
     url: siteUrl,
+    logo: `${siteUrl}/icon.png`,
+    image: `${siteUrl}/icon.png`,
     description: siteDescription,
-    sameAs: ["https://linkedin.com/company/lotrino"],
+    email: "office@lotrino.com",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Kenyongasse 21",
+      addressLocality: "Vienna",
+      postalCode: "1070",
+      addressCountry: "AT",
+    },
+    areaServed: { "@type": "Country", name: "Austria" },
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "office@lotrino.com",
+      contactType: "customer service",
+      availableLanguage: ["English", "German"],
+    },
+    sameAs: ["https://www.linkedin.com/company/lotrino"],
   };
 
   const structuredDataGraph = {

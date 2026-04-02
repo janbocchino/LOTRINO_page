@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getIndustries, getFazitSection } from "@/lib/use-cases-data";
-import { absoluteUrl } from "@/lib/site";
+import { absoluteUrl, defaultShareMetadata, hreflangAlternates } from "@/lib/site";
 import type { AppLocale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
 
@@ -30,12 +30,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     alternates: {
       canonical: absoluteUrl(locale, "/use-cases"),
-      languages: {
-        en: absoluteUrl("en", "/use-cases"),
-        de: absoluteUrl("de", "/use-cases"),
-      },
+      languages: hreflangAlternates("/use-cases"),
     },
-    openGraph: { title, description },
+    ...defaultShareMetadata(locale, title, description),
   };
 }
 

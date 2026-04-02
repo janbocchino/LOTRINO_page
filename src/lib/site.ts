@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getIndustries } from "./use-cases-data";
 import type { AppLocale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
@@ -42,4 +43,64 @@ export function pathWithLocale(locale: AppLocale, path: string): string {
 export function absoluteUrl(locale: AppLocale, path: string): string {
   const p = pathWithLocale(locale, path);
   return `${siteUrl}${p}`;
+}
+
+/** Next.js `opengraph-image` route under each locale segment. */
+export function openGraphImageUrl(locale: AppLocale): string {
+  return absoluteUrl(locale, "/opengraph-image");
+}
+
+/**
+ * hreflang map for `alternates.languages` and sitemap — includes `x-default` (default locale).
+ */
+export function hreflangAlternates(path: string): Record<string, string> {
+  const p = path === "/" ? "/" : path.startsWith("/") ? path : `/${path}`;
+  const defaultLocale = routing.defaultLocale as AppLocale;
+  return {
+    en: absoluteUrl("en", p),
+    de: absoluteUrl("de", p),
+    "x-default": absoluteUrl(defaultLocale, p),
+  };
+}
+
+/** ISO dates for sitemap `lastmod` (stable; update when content changes meaningfully). */
+const SITEMAP_LAST_MOD: Record<string, string> = {
+  "/": "2025-04-02",
+  "/use-cases": "2025-04-02",
+  "/team": "2025-04-02",
+  "/imprint": "2025-01-15",
+  "/privacy-policy": "2025-01-15",
+  "/terms": "2025-01-15",
+};
+
+for (const r of useCaseIndustryRoutes) {
+  SITEMAP_LAST_MOD[r] = "2025-04-02";
+}
+
+export function lastModifiedForSitemapPath(path: string): Date {
+  const key = path === "" ? "/" : path.startsWith("/") ? path : `/${path}`;
+  const iso = SITEMAP_LAST_MOD[key];
+  return iso ? new Date(iso) : new Date("2025-04-02");
+}
+
+/** Open Graph + Twitter cards using the locale `opengraph-image` route. */
+export function defaultShareMetadata(
+  locale: AppLocale,
+  title: string,
+  description: string,
+): Pick<Metadata, "openGraph" | "twitter"> {
+  const og = openGraphImageUrl(locale);
+  return {
+    openGraph: {
+      title,
+      description,
+      images: [{ url: og, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [og],
+    },
+  };
 }

@@ -3,7 +3,12 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import janPortrait from "@/assets/Jan.jpeg";
 import mattisPortrait from "@/assets/Mattis.jpeg";
-import { absoluteUrl } from "@/lib/site";
+import {
+  absoluteUrl,
+  defaultShareMetadata,
+  hreflangAlternates,
+  siteUrl,
+} from "@/lib/site";
 import type { AppLocale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
 
@@ -21,12 +26,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     alternates: {
       canonical: absoluteUrl(locale, "/team"),
-      languages: {
-        en: absoluteUrl("en", "/team"),
-        de: absoluteUrl("de", "/team"),
-      },
+      languages: hreflangAlternates("/team"),
     },
-    openGraph: { title, description },
+    ...defaultShareMetadata(locale, title, description),
   };
 }
 
@@ -34,9 +36,39 @@ export default async function TeamPage({ params }: Props) {
   const { locale: loc } = await params;
   const locale = loc as AppLocale;
   const t = await getTranslations({ locale, namespace: "team" });
+  const pageUrl = absoluteUrl(locale, "/team");
+  const orgRef = { "@id": `${siteUrl}/#organization` };
+  const janImageUrl = `${siteUrl}${janPortrait.src}`;
+  const mattisImageUrl = `${siteUrl}${mattisPortrait.src}`;
+  const teamPersonJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": `${pageUrl}#jan-bocchino`,
+        name: "Jan Bocchino",
+        jobTitle: t("janRole"),
+        image: janImageUrl,
+        sameAs: ["https://www.linkedin.com/in/jan-bocchino-5a6008235/"],
+        worksFor: orgRef,
+      },
+      {
+        "@type": "Person",
+        "@id": `${pageUrl}#mattis-scherbacher`,
+        name: "Mattis Scherbacher",
+        jobTitle: t("mattisRole"),
+        image: mattisImageUrl,
+        worksFor: orgRef,
+      },
+    ],
+  };
 
   return (
     <section className="mx-auto max-w-5xl space-y-10 px-6 py-24 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(teamPersonJsonLd) }}
+      />
       <div className="space-y-3">
         <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">{t("title")}</h1>
         <p className="max-w-2xl leading-relaxed text-muted">{t("intro")}</p>

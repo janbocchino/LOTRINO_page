@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import PrivacyEn from "@/components/legal/privacy-en";
 import PrivacyDe from "@/components/legal/privacy-de";
-import { absoluteUrl } from "@/lib/site";
+import { absoluteUrl, defaultShareMetadata, hreflangAlternates } from "@/lib/site";
 import type { AppLocale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
 
@@ -13,16 +13,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale = loc as AppLocale;
   if (!routing.locales.includes(locale)) return {};
   const t = await getTranslations({ locale, namespace: "privacy" });
+  const title = `${t("title")} | LOTRINO`;
+  const description = t("description");
   return {
-    title: `${t("title")} | LOTRINO`,
-    description: t("description"),
+    title,
+    description,
     alternates: {
       canonical: absoluteUrl(locale, "/privacy-policy"),
-      languages: {
-        en: absoluteUrl("en", "/privacy-policy"),
-        de: absoluteUrl("de", "/privacy-policy"),
-      },
+      languages: hreflangAlternates("/privacy-policy"),
     },
+    ...defaultShareMetadata(locale, title, description),
   };
 }
 
