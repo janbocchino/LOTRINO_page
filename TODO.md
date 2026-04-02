@@ -1,0 +1,5 @@
+- improve solutions 
+- improve mission
+- get rid of AI slop
+- Services ist zu generisch
+- Gescheiten Team Text
