@@ -48,8 +48,16 @@ export default function IndustryPage({ industry }: Props) {
           <h1 className="font-heading mt-2 text-3xl font-semibold tracking-tight md:text-4xl">
             {industry.title}
           </h1>
+          <p className="mt-3 text-sm leading-relaxed text-muted md:text-base">{industry.tagline}</p>
         </div>
       </header>
+
+      <section className="glass space-y-4 rounded-2xl p-6 md:p-8">
+        <h2 className="font-heading text-lg font-semibold tracking-tight text-foreground">
+          {t("introHeading")}
+        </h2>
+        <p className="leading-relaxed text-muted">{industry.intro}</p>
+      </section>
 
       <section className="glass space-y-4 rounded-2xl p-6 md:p-8">
         <h2 className="font-heading text-lg font-semibold tracking-tight text-foreground">{t("manualHeading")}</h2>
@@ -86,6 +94,46 @@ export default function IndustryPage({ industry }: Props) {
             </li>
           ))}
         </ul>
+      </section>
+
+      <section className="glass space-y-4 rounded-2xl p-6 md:p-8">
+        <h2 className="font-heading text-lg font-semibold tracking-tight text-foreground">{t("lotrinoHeading")}</h2>
+        <p className="leading-relaxed text-muted">{industry.lotrinoBridge}</p>
+        <p className="pt-2 text-sm text-muted">
+          <Link
+            href="/#services"
+            className="font-medium text-accent underline-offset-4 transition-colors hover:text-foreground hover:underline focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          >
+            {t("servicesLink")}
+          </Link>
+        </p>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="font-heading text-lg font-semibold tracking-tight text-foreground">{t("faqHeading")}</h2>
+        <div className="space-y-2">
+          {industry.faqs.map((faq) => (
+            <details
+              key={faq.q}
+              className="group glass overflow-hidden rounded-xl border border-white/5 bg-white/[0.02]"
+            >
+              <summary className="cursor-pointer list-none px-4 py-3 pr-10 text-sm font-medium leading-relaxed text-foreground transition-colors hover:bg-white/[0.03] [&::-webkit-details-marker]:hidden">
+                <span className="relative block">
+                  {faq.q}
+                  <span
+                    className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 text-muted transition-transform group-open:rotate-180"
+                    aria-hidden
+                  >
+                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </span>
+                </span>
+              </summary>
+              <div className="border-t border-white/5 px-4 pb-3 pt-3 text-sm leading-relaxed text-muted">{faq.a}</div>
+            </details>
+          ))}
+        </div>
       </section>
 
       <footer className="flex flex-col gap-4 border-t border-border pt-8 sm:flex-row sm:items-center sm:justify-between">

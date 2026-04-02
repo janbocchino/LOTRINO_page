@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import IndustryPage from "@/components/use-cases/IndustryPage";
 import { getIndustry, getIndustries } from "@/lib/use-cases-data";
-import { siteName, absoluteUrl } from "@/lib/site";
+import { absoluteUrl } from "@/lib/site";
 import type { AppLocale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
 
@@ -27,12 +27,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!industry) {
     return { title: "Not found" };
   }
-  const t = await getTranslations({ locale, namespace: "industryPage" });
-  const titleShort = industry.title.replace(/\s*\([^)]*\)\s*$/, "").trim() || industry.title;
-  const title = `${titleShort} — ${t("metaSuffix")}`;
+  const title = industry.metaTitle;
+  const description = industry.metaDescription;
   return {
     title,
-    description: industry.tagline,
+    description,
     alternates: {
       canonical: absoluteUrl(locale, `/use-cases/${slug}`),
       languages: {
@@ -41,9 +40,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: `${titleShort} | ${siteName}`,
-      description: industry.tagline,
+      title,
+      description,
     },
+  };
+}
+
+function faqJsonLd(locale: AppLocale, slug: string, industry: NonNullable<ReturnType<typeof getIndustry>>) {
+  const pageUrl = absoluteUrl(locale, `/use-cases/${slug}`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${pageUrl}#faq`,
+    url: pageUrl,
+    mainEntity: industry.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.a,
+      },
+    })),
   };
 }
 
@@ -55,9 +72,17 @@ export default async function UseCaseIndustryRoute({ params }: Props) {
   const industry = getIndustry(slug, locale);
   if (!industry) notFound();
 
+  const jsonLd = faqJsonLd(locale, slug, industry);
+
   return (
-    <section className="noise mx-auto max-w-3xl px-6 py-24 lg:px-8">
-      <IndustryPage industry={industry} />
-    </section>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <section className="noise mx-auto max-w-3xl px-6 py-24 lg:px-8">
+        <IndustryPage industry={industry} />
+      </section>
+    </>
   );
 }

@@ -39,7 +39,7 @@
     "label": "Our Services",
     "headingBefore": "From idea to",
     "headingMuted": "implementation",
-    "intro": "A clear path from strategy through build, integration, and ongoing optimization — so AI delivers measurable value, not shelf-ware.",
+    "intro": "A clear path from strategy through build, integration, and ongoing optimization - so AI delivers measurable value, not shelf-ware.",
     "outro": "Ready to transform your business with AI?",
     "cta": "Let's talk!",
     "steps": {
@@ -67,6 +67,7 @@
     "headingMuted": "your business",
     "outro": "Ready to transform your business?",
     "cta": "Get in Touch",
+    "useCasesLink": "Explore industry use cases",
     "items": {
       "seo-agents": {
         "title": "SEO Agents",
@@ -126,29 +127,36 @@
     "fromName": "LOTRINO Website"
   },
   "team": {
-    "title": "Team",
-    "intro": "LOTRINO is built by two co-founders who combine strategic vision with hands-on delivery - so AI stays practical, understandable, and built to last.",
-    "role": "Co-founder",
-    "janBio": "Focuses on product direction, clarity of experience, and helping clients see what AI can do in practice.",
-    "mattisBio": "Focuses on turning strategy into delivery: robust implementation and lasting operational value.",
+    "title": "The team",
+    "intro": "LOTRINO is a focused AI practice: two founders who bridge strategy, technical consulting, and delivery - so your automation stays practical, explainable, and built to last.",
+    "janRole": "Co-founder · Product & AI",
+    "mattisRole": "Co-founder · Delivery & systems",
+    "janBio": "Former EY, with long experience in technical consulting across complex client environments. He sets product direction and makes AI legible for leadership teams -while advancing his expertise through AI studies at Johannes Kepler University Linz.",
+    "mattisBio": "He turns roadmaps into production-grade systems: architecture, integration, and the operational rigor that keeps automation valuable after go-live.",
     "janAlt": "Portrait of Jan Bocchino, co-founder of LOTRINO.",
     "mattisAlt": "Portrait of Mattis Scherbacher, co-founder of LOTRINO, at an outdoor cafe."
   },
   "useCasesPage": {
     "title": "Use Cases",
-    "description": "Industry-specific use cases: recruiting, logistics, healthcare, law firms, facility management — and what can realistically be automated.",
+    "description": "Industry-specific use cases: recruiting, logistics, healthcare, law firms, facility management - and what can realistically be automated.",
     "heading": "Use Cases",
     "intro": "Where repetitive work piles up most - and automation and AI levers that are realistic. Choose an industry for details.",
+    "introLead": "We connect AI strategy and hands-on implementation to operational reality - where repetitive work hides in ATS, WMS, practice software, law firm systems, and CAFM tools.",
+    "introRich": "Deep dives by sector: <recruiting>recruiting & applicant tracking workflows</recruiting>, <logistics>warehouse operations & supply chain</logistics>, <healthcare>medical practice administration & EHR</healthcare>, <legal>law firm intake & billing</legal>, and <facility>facility management & work orders</facility>.",
     "readMore": "Read more",
-    "metaTitle": "Use Cases",
-    "metaDescription": "Industry-specific use cases: recruiting, logistics, healthcare, law firms, facility management — and what can realistically be automated."
+    "metaTitle": "Industry AI & workflow automation use cases | LOTRINO",
+    "metaDescription": "AI consulting for real operations: recruiting & ATS, logistics & WMS, medical practice admin, legal operations, and facility management - realistic automation levers."
   },
   "industryPage": {
     "breadcrumb": "Use Cases",
     "industryBadge": "Industry",
+    "introHeading": "Who this is for",
     "manualHeading": "Typical manual & repetitive tasks",
     "whyHeading": "Why this is unpleasant",
     "autoHeading": "Automation potential",
+    "lotrinoHeading": "How LOTRINO helps",
+    "faqHeading": "FAQ",
+    "servicesLink": "Strategy → implementation services",
     "back": "All use cases",
     "metaSuffix": "Use Cases"
   },

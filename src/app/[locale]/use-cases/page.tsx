@@ -46,6 +46,9 @@ export default async function UseCasesPage({ params }: Props) {
   const industries = getIndustries(locale);
   const fazitSection = getFazitSection(locale);
 
+  const hubLinkClass =
+    "font-medium text-accent underline decoration-accent/40 underline-offset-[3px] transition-colors hover:text-foreground hover:decoration-foreground focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent";
+
   return (
     <div className="noise">
       <div className="relative border-b border-white/5 mesh-gradient grid-pattern">
@@ -54,7 +57,36 @@ export default async function UseCasesPage({ params }: Props) {
             <h1 className="font-heading text-4xl font-semibold tracking-tight md:text-5xl">
               Use <span className="gradient-text">Cases</span>
             </h1>
-            <p className="leading-relaxed text-muted">{t("intro")}</p>
+            <p className="leading-relaxed text-muted">{t("introLead")}</p>
+            <div className="leading-relaxed text-muted">
+              {t.rich("introRich", {
+                recruiting: (chunks) => (
+                  <Link href="/use-cases/recruiting" className={hubLinkClass}>
+                    {chunks}
+                  </Link>
+                ),
+                logistics: (chunks) => (
+                  <Link href="/use-cases/logistics" className={hubLinkClass}>
+                    {chunks}
+                  </Link>
+                ),
+                healthcare: (chunks) => (
+                  <Link href="/use-cases/healthcare" className={hubLinkClass}>
+                    {chunks}
+                  </Link>
+                ),
+                legal: (chunks) => (
+                  <Link href="/use-cases/legal" className={hubLinkClass}>
+                    {chunks}
+                  </Link>
+                ),
+                facility: (chunks) => (
+                  <Link href="/use-cases/facility-management" className={hubLinkClass}>
+                    {chunks}
+                  </Link>
+                ),
+              })}
+            </div>
           </div>
         </div>
       </div>

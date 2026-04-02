@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import { useLocale } from "next-intl";
 import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "motion/react";
+import { Link } from "@/i18n/navigation";
 import type { SolutionId } from "@/lib/solutions";
 import { getSolutionsData } from "@/lib/solutions";
 import type { AppLocale } from "@/i18n/routing";
@@ -128,6 +129,16 @@ const Solutions = () => {
                     {solution.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted md:text-base">{solution.tagline}</p>
+                  {(solution.id === "internal-processes" || solution.id === "custom-solutions") && (
+                    <p className="mt-3 text-sm">
+                      <Link
+                        href="/use-cases"
+                        className="font-medium text-accent underline-offset-4 transition-colors hover:text-foreground hover:underline focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                      >
+                        {t("useCasesLink")}
+                      </Link>
+                    </p>
+                  )}
                 </div>
               </div>
             </motion.article>

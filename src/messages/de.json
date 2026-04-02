@@ -67,6 +67,7 @@
     "headingMuted": "Ihrem Business",
     "outro": "Bereit, Ihr Business zu transformieren?",
     "cta": "Kontakt aufnehmen",
+    "useCasesLink": "Branchen-Use-Cases ansehen",
     "items": {
       "seo-agents": {
         "title": "SEO-Agenten",
@@ -126,29 +127,36 @@
     "fromName": "LOTRINO Website"
   },
   "team": {
-    "title": "Team",
-    "intro": "LOTRINO wird von zwei Gründern getragen – strategische Vision und Hands-on-Umsetzung, damit KI praktisch, verständlich und nachhaltig bleibt.",
-    "role": "Mitgründer",
-    "janBio": "Fokus auf Produktrichtung, klare Experience und darauf, was KI in der Praxis leisten kann.",
-    "mattisBio": "Fokus auf die Umsetzung: robuste Implementierung und dauerhafter operativer Nutzen.",
+    "title": "Das Team",
+    "intro": "LOTRINO ist eine fokussierte KI-Praxis: zwei Gründer, die Strategie, technische Beratung und Umsetzung verbinden - damit Automatisierung praktisch bleibt, erklärbar ist und langfristig trägt.",
+    "janRole": "Mitgründer · Produkt & KI",
+    "mattisRole": "Mitgründer · Umsetzung & Systeme",
+    "janBio": "Ehemals bei EY, mit langjähriger Erfahrung in der technischen Beratung in anspruchsvollen Mandantenumfeldern. Er prägt Produkt und KI-Roadmaps und macht KI für Führungsteams greifbar - parallel vertieft er sein Fachwissen im KI-Studium an der Johannes Kepler Universität Linz.",
+    "mattisBio": "Er übersetzt Roadmaps in produktionsreife Systeme: Architektur, Integration und operative Disziplin, damit Automatisierung nach dem Go-live weiter Nutzen liefert.",
     "janAlt": "Porträt von Jan Bocchino, Mitgründer von LOTRINO.",
     "mattisAlt": "Porträt von Mattis Scherbacher, Mitgründer von LOTRINO, in einem Café im Freien."
   },
   "useCasesPage": {
     "title": "Anwendungsfälle",
-    "description": "Branchenspezifische Use Cases: Recruiting, Logistik, Medizin, Kanzleien, Facility Management — und was sich realistisch automatisieren lässt.",
+    "description": "Branchenspezifische Use Cases: Recruiting, Logistik, Medizin, Kanzleien, Facility Management - und was sich realistisch automatisieren lässt.",
     "heading": "Use Cases",
-    "intro": "Wo sich wiederkehrende Arbeit besonders staut — und welche Hebel Automatisierung und KI realistisch bieten. Wähle eine Branche für Details.",
+    "intro": "Wo sich wiederkehrende Arbeit besonders staut - und welche Hebel Automatisierung und KI realistisch bieten. Wähle eine Branche für Details.",
+    "introLead": "Wir verbinden KI-Strategie und Umsetzung mit operativer Realität - dort, wo wiederkehrende Arbeit in ATS, WMS, Praxissoftware, Kanzlei-Systemen und CAFM steckt.",
+    "introRich": "Vertiefungen nach Branche: <recruiting>Recruiting & Bewerbermanagement (ATS)</recruiting>, <logistics>Lagerlogistik & Supply Chain</logistics>, <healthcare>Praxisorganisation & Patientenverwaltung</healthcare>, <legal>Mandantenaufnahme & Billing in Kanzleien</legal> sowie <facility>Facility Management & Störungsmanagement</facility>.",
     "readMore": "Mehr lesen",
-    "metaTitle": "Use Cases",
-    "metaDescription": "Branchenspezifische Use Cases: Recruiting, Logistik, Medizin, Kanzleien, Facility Management — und was sich realistisch automatisieren lässt."
+    "metaTitle": "Branchen-KI & Workflow-Automatisierung | LOTRINO",
+    "metaDescription": "KI-Beratung für echte Abläufe: Recruiting & ATS, Logistik & WMS, Praxisorganisation, Legal Operations und Facility Management - realistische Automatisierungshebel."
   },
   "industryPage": {
     "breadcrumb": "Use Cases",
     "industryBadge": "Branche",
+    "introHeading": "Für wen das relevant ist",
     "manualHeading": "Typisch manuelle & repetitive Tätigkeiten",
     "whyHeading": "Warum das unangenehm ist",
     "autoHeading": "Automatisierungspotenziale",
+    "lotrinoHeading": "Wie LOTRINO unterstützt",
+    "faqHeading": "FAQ",
+    "servicesLink": "Strategie, Umsetzung & Services",
     "back": "Alle Use Cases",
     "metaSuffix": "Use Cases"
   },

@@ -55,7 +55,7 @@ export default async function TeamPage({ params }: Props) {
             />
           </div>
           <div className="space-y-2">
-            <p className="text-xs uppercase tracking-widest text-accent">{t("role")}</p>
+            <p className="text-xs uppercase tracking-widest text-accent">{t("janRole")}</p>
             <h2 className="font-heading text-xl font-semibold tracking-tight text-foreground">Jan Bocchino</h2>
             <p className="leading-relaxed text-muted">{t("janBio")}</p>
           </div>
@@ -72,7 +72,7 @@ export default async function TeamPage({ params }: Props) {
             />
           </div>
           <div className="space-y-2">
-            <p className="text-xs uppercase tracking-widest text-accent">{t("role")}</p>
+            <p className="text-xs uppercase tracking-widest text-accent">{t("mattisRole")}</p>
             <h2 className="font-heading text-xl font-semibold tracking-tight text-foreground">Mattis Scherbacher</h2>
             <p className="leading-relaxed text-muted">{t("mattisBio")}</p>
           </div>
