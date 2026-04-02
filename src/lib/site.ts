@@ -3,7 +3,7 @@ import { getIndustries } from "./use-cases-data";
 import type { AppLocale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
 
-/** Canonical site URL — no trailing slash. Set NEXT_PUBLIC_SITE_URL in production. */
+/** Canonical site URL - no trailing slash. Set NEXT_PUBLIC_SITE_URL in production. */
 export const siteUrl =
   (process.env.NEXT_PUBLIC_SITE_URL || "https://lotrino.com").replace(
     /\/$/,
@@ -14,7 +14,7 @@ export const siteName = "LOTRINO";
 
 /** Default English description (legacy / non-request contexts). */
 export const siteDescription =
-  "We bridge the gap between ideas and action. End-to-end AI consulting, from strategy development to implementation and optimization.";
+  "Prioritized pilots, production-grade builds, and integration into the systems you already use-so automation stays practical and owned after go-live.";
 
 /** Paths without locale prefix. */
 export const routes = [
@@ -51,7 +51,7 @@ export function openGraphImageUrl(locale: AppLocale): string {
 }
 
 /**
- * hreflang map for `alternates.languages` and sitemap — includes `x-default` (default locale).
+ * hreflang map for `alternates.languages` and sitemap - includes `x-default` (default locale).
  */
 export function hreflangAlternates(path: string): Record<string, string> {
   const p = path === "/" ? "/" : path.startsWith("/") ? path : `/${path}`;

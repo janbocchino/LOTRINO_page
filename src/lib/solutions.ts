@@ -18,30 +18,33 @@ export type SolutionItem = {
 const solutionsDataEn: SolutionItem[] = [
   {
     id: "seo-agents",
-    title: "SEO Agents",
+    title: "SEO & content agents",
     tagline:
-      "Dominate search rankings with AI that writes and optimizes pages in lightning speed",
+      "Drafts and tune-ups for pages and metadata so search work does not bottleneck on bandwidth.",
   },
   {
     id: "social-media-agents",
-    title: "Social Media Agents",
-    tagline: "Let AI craft, schedule, and amplify your social presence",
+    title: "Social content agents",
+    tagline:
+      "Turn briefs into posts and calendars your team can approve-fewer blank-page days in marketing.",
   },
   {
     id: "internal-processes",
-    title: "Agents for Internal Processes",
-    tagline: "Streamline operations with AI that works around the clock",
+    title: "Internal workflow agents",
+    tagline:
+      "Support handoffs in tickets, docs, and CRM-where repetitive work piles up in real operations.",
   },
   {
     id: "ecommerce-agents",
-    title: "E-Commerce Agents",
-    tagline: "AI-driven E-Commerce OS that handles your online sales",
+    title: "E-commerce agents",
+    tagline:
+      "Listing copy, catalog hygiene, and shop workflows wired to your stack-not a generic storefront OS.",
   },
   {
     id: "custom-solutions",
-    title: "Custom Solutions",
+    title: "Custom builds",
     tagline:
-      "AI solutions designed specifically for your unique business challenges.",
+      "When a catalog agent is not enough: architecture, integration, and ownership end to end.",
     colSpan2: true,
   },
 ];
@@ -49,30 +52,33 @@ const solutionsDataEn: SolutionItem[] = [
 const solutionsDataDe: SolutionItem[] = [
   {
     id: "seo-agents",
-    title: "SEO-Agenten",
+    title: "SEO- & Content-Agenten",
     tagline:
-      "Dominieren Sie die Suchergebnisse mit KI, die Seiten blitzschnell schreibt und optimiert",
+      "Entwürfe und Feintuning für Seiten und Metadaten – damit SEO nicht an fehlender Kapazität scheitert.",
   },
   {
     id: "social-media-agents",
-    title: "Social-Media-Agenten",
-    tagline: "KI erstellt, plant und verstärkt Ihre Social-Media-Präsenz",
+    title: "Social-Content-Agenten",
+    tagline:
+      "Briefings in Posts und Redaktionspläne übersetzen, die Ihr Team schnell freigibt – weniger leere Kalender.",
   },
   {
     id: "internal-processes",
-    title: "Agenten für interne Prozesse",
-    tagline: "Verschlanken Sie Abläufe mit KI, die rund um die Uhr arbeitet",
+    title: "Agenten für interne Workflows",
+    tagline:
+      "Unterstützung bei Tickets, Dokumenten und CRM-Übergaben – dort, wo wiederkehrende Arbeit im Alltag steckt.",
   },
   {
     id: "ecommerce-agents",
     title: "E-Commerce-Agenten",
-    tagline: "KI-gestütztes E-Commerce-System für Ihren Online-Vertrieb",
+    tagline:
+      "Listing-Texte, Katalogpflege und Shop-Workflows angebunden an Ihre Systeme – kein generisches Shop-OS.",
   },
   {
     id: "custom-solutions",
-    title: "Individuelle Lösungen",
+    title: "Individuelle Umsetzungen",
     tagline:
-      "KI-Lösungen, genau auf Ihre spezifischen Business-Herausforderungen zugeschnitten.",
+      "Wenn Standard-Agenten nicht reichen: Architektur, Integration und Verantwortung End-to-End.",
     colSpan2: true,
   },
 ];
@@ -84,11 +90,14 @@ export function getSolutionsData(locale: AppLocale): SolutionItem[] {
 /** JSON-LD fragment for merging into @graph (ItemList of offered solutions). */
 export function getSolutionsItemListSchema(locale: AppLocale) {
   const solutionsData = getSolutionsData(locale);
-  const name = locale === "de" ? "KI-Agenten-Lösungen" : "AI agent solutions";
+  const name =
+    locale === "de"
+      ? "KI-Agenten für SEO, Social, Ops und E-Commerce"
+      : "AI agents for SEO, social, operations, and commerce";
   const description =
     locale === "de"
-      ? "KI-Agenten und individuelle Lösungen für SEO, Social Media, Operations und E-Commerce."
-      : "AI agents and custom solutions for SEO, social media, operations, and e-commerce.";
+      ? "Agentische Unterstützung für Content, Social, interne Workflows, E-Commerce und maßgeschneiderte Automatisierung."
+      : "Agent-style automation for content, social, internal workflows, commerce, and custom integrations.";
 
   return {
     "@type": "ItemList" as const,

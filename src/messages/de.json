@@ -24,96 +24,75 @@
     "copyright": "© {year} Lotrino. Alle Rechte vorbehalten."
   },
   "meta": {
-    "homeTitle": "KI-Beratung & Umsetzung",
-    "homeDescription": "Wir schlagen die Brücke zwischen Ideen und Umsetzung. End-to-End-KI-Beratung – von der Strategie über die Implementierung bis zur Optimierung.",
-    "keywords": "KI-Beratung, künstliche Intelligenz, KI-Implementierung, maschinelles Lernen, digitale Transformation"
+    "homeTitle": "KI-Strategie & Umsetzung",
+    "homeDescription": "Priorisierte Piloten, produktionsreife Umsetzung und Einbindung in Ihre bestehenden Systeme – damit Automatisierung praktisch bleibt und nach dem Go-live Verantwortliche haben.",
+    "keywords": "KI-Beratung, Workflow-Automatisierung, KI-Implementierung, maschinelles Lernen, operative Prozesse"
   },
   "hero": {
-    "badge": "KI-Beratung & Umsetzung",
-    "titleLine1": "Transformieren Sie",
-    "titleLine2": "Ihr Business mit KI",
-    "subtitle": "Alles, was wir brauchen, um die Welt zu verändern, gibt es schon. Wir schlagen die Brücke zwischen Ideen und Umsetzung – weil echte Veränderung beginnt, wenn man sie einfach angeht.",
-    "cta": "Transformation starten"
+    "badge": "Strategie · Umsetzung · Automatisierung",
+    "titleLine1": "KI, die zu",
+    "titleLine2": "Ihren Prozessen passt",
+    "subtitle": "Wir verbinden Strategie und Lieferung mit der Software, die Sie heute nutzen – CRM, Shops, Fachverfahren – damit Erfolge messbar sind und Teams nachvollziehen, was das System getan hat.",
+    "cta": "Gespräch vereinbaren"
   },
   "services": {
     "label": "Unsere Leistungen",
-    "headingBefore": "Von der Idee zur",
-    "headingMuted": "Umsetzung",
-    "intro": "Ein klarer Weg von Strategie über Build und Integration bis zur laufenden Optimierung – damit KI messbaren Wert liefert, keine Schaufensterware.",
-    "outro": "Bereit, Ihr Business mit KI zu transformieren?",
+    "headingBefore": "Strategie, Traction,",
+    "headingMuted": "dann Systeme",
+    "intro": "Wir starten mit dem, was in Ihrem Stack realistisch ist, fahren enge Piloten und integrieren und messen danach – damit Schwung entsteht, bevor die Roadmap feststeht.",
+    "outro": "Sagen Sie uns, wo die Arbeit ansteht – wir helfen Ihnen, den ersten Erfolg zu skizzieren.",
     "cta": "Sprechen wir!",
     "steps": {
       "strategy": {
-        "title": "Strategie",
-        "description": "KI-Roadmap, abgestimmt auf Ihre Geschäftsziele"
+        "title": "Discovery & Roadmap",
+        "description": "Priorisierte Use Cases, Grenzen und Verantwortliche – damit klar ist, was zuerst pilotiert wird und wann Sie fertig sind."
       },
       "development": {
-        "title": "Entwicklung",
-        "description": "Maßgeschneiderte KI-Lösungen für Ihre konkreten Herausforderungen"
+        "title": "Pilot & Umsetzung",
+        "description": "Ein begrenzter Build, der Nutzen in Ihren echten Daten und Tools zeigt, bevor Sie Budget oder Personal hochziehen."
       },
       "integration": {
-        "title": "Integration",
-        "description": "Nahtlose Einbindung in Ihre bestehende Infrastruktur und Workflows"
+        "title": "Rollout & Integration",
+        "description": "Produktiver Einschub in Ihre Systeme und Abläufe – inkl. Security, Übergaben und Schulung."
       },
       "optimization": {
-        "title": "Optimierung",
-        "description": "Kontinuierliche Verfeinerung für maximale Performance"
+        "title": "Messen & iterieren",
+        "description": "KPIs, Ownership und ein Feedback-Loop, damit Automatisierung nach dem Go-live weiter Nutzen liefert."
       }
     }
   },
   "solutions": {
     "label": "Unsere Lösungen",
-    "headingBefore": "KI-Agenten, passend zu",
-    "headingMuted": "Ihrem Business",
-    "outro": "Bereit, Ihr Business zu transformieren?",
+    "headingBefore": "Agenten für",
+    "headingMuted": "echte Workflows",
+    "outro": "Möchten Sie sehen, wo das in Ihrer Branche passt?",
     "cta": "Kontakt aufnehmen",
     "useCasesLink": "Branchen-Use-Cases ansehen",
-    "items": {
-      "seo-agents": {
-        "title": "SEO-Agenten",
-        "tagline": "Dominieren Sie die Suchergebnisse mit KI, die Seiten blitzschnell schreibt und optimiert"
-      },
-      "social-media-agents": {
-        "title": "Social-Media-Agenten",
-        "tagline": "KI erstellt, plant und verstärkt Ihre Social-Media-Präsenz"
-      },
-      "internal-processes": {
-        "title": "Agenten für interne Prozesse",
-        "tagline": "Verschlanken Sie Abläufe mit KI, die rund um die Uhr arbeitet"
-      },
-      "ecommerce-agents": {
-        "title": "E-Commerce-Agenten",
-        "tagline": "KI-gestütztes E-Commerce-System für Ihren Online-Vertrieb"
-      },
-      "custom-solutions": {
-        "title": "Individuelle Lösungen",
-        "tagline": "KI-Lösungen, genau auf Ihre spezifischen Business-Herausforderungen zugeschnitten."
-      }
-    },
-    "schemaName": "KI-Agenten-Lösungen",
-    "schemaDescription": "KI-Agenten und individuelle Lösungen für SEO, Social Media, Operations und E-Commerce."
+    "schemaName": "KI-Agenten für SEO, Social, Ops und E-Commerce",
+    "schemaDescription": "Agentische Unterstützung für Content, Social, interne Workflows, E-Commerce und maßgeschneiderte Automatisierung."
   },
   "about": {
     "visionLabel": "Unsere Vision",
-    "visionTitleBefore": "Zugang zu ",
-    "visionTitleHighlight": "modernster KI",
-    "visionTitleAfter": " für alle demokratisieren",
-    "visionLead": "Wir stellen uns eine Zukunft vor, in der Unternehmen jeder Größe die Kraft der KI nutzen, um Wachstum, Effizienz und Innovation zu entfalten. Unsere Mission: KI-Lösungen zugänglich, verständlich und umsetzbar zu machen.",
+    "visionTitleBefore": "Weniger Routine, ",
+    "visionTitleHighlight": "mehr Urteilsvermögen",
+    "visionTitleAfter": "",
+    "visionLead": "Teams sollen Zeit für Entscheidungen haben, die Menschen treffen müssen – nicht für Copy-Paste zwischen Tools.",
+    "missionLead": "Wir helfen Ihnen, den ersten Erfolg zu wählen, ihn produktiv auszurollen und Automatisierung für Führung und Fachbereiche erklärbar zu halten.",
     "statHuman": "Mensch im Mittelpunkt",
     "statPoss": "Möglichkeiten",
     "approachLabel": "Unser Ansatz",
-    "approachTitleBefore": "Technische Expertise trifft ",
-    "approachTitleHighlight": "Menschlichkeit",
+    "approachTitleBefore": "Ein roter Faden von der ",
+    "approachTitleHighlight": "Roadmap bis zum laufenden System",
     "approachTitleAfter": "",
-    "approachLead": "Jede Lösung nutzt nicht nur die neueste KI, sondern stärkt Ihr Team, erweitert Ihre Fähigkeiten und fördert nachhaltiges Wachstum.",
-    "values": ["Transparenz", "Zusammenarbeit", "Echte Wirkung"]
+    "approachLead": "Zwei Gründer: Produkt und KI auf der einen Seite, Umsetzung und Systeme auf der anderen – damit die Strategie nicht nach dem Workshop verpufft.",
+    "values": ["Klare Sprache", "Umsetzung statt Folien", "Dauerhafter Nutzen"]
   },
   "contact": {
     "label": "Kontakt",
-    "titleBefore": "Bereit, Ihr Business zu ",
-    "titleHighlight": "transformieren",
+    "titleBefore": "Einen ",
+    "titleHighlight": "Piloten abstecken",
     "titleAfter": "?",
-    "intro": "Lassen Sie uns besprechen, wie KI Ihr Wachstum beschleunigen kann. Schreiben Sie uns – wir melden uns zeitnah.",
+    "intro": "Schreiben Sie uns, wo Arbeit ansteht und welche Systeme im Spiel sind – wir antworten mit konkreten nächsten Schritten, nicht mit Standard-Folien.",
     "name": "Name",
     "email": "E-Mail",
     "message": "Nachricht",

@@ -417,7 +417,7 @@ body {
   pointer-events: none;
 }
 
-/* Card reveal on hover (timeline items only — avoid leaking to any .group) */
+/* Card reveal on hover (timeline items only - avoid leaking to any .group) */
 .timeline-item:hover::before {
   opacity: 1;
   transform: scale(1);
@@ -518,7 +518,7 @@ body {
   box-shadow: 0 8px 24px rgba(121, 184, 186, 0.3);
 }
 
-/* Title lift on hover (timeline items only — not every .group card) */
+/* Title lift on hover (timeline items only - not every .group card) */
 .timeline-item h3 {
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
 }

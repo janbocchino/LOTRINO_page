@@ -11,27 +11,30 @@ const serviceStepsEn: ServiceStep[] = [
   {
     id: "strategy",
     number: "01",
-    title: "Strategy",
-    description: "AI roadmap aligned with your business goals",
+    title: "Discovery & roadmap",
+    description:
+      "Prioritized use cases, boundaries, and owners-so you know what to pilot first and what “done” means.",
   },
   {
     id: "development",
     number: "02",
-    title: "Development",
-    description: "Custom AI solutions built for your specific challenges",
+    title: "Pilot & build",
+    description:
+      "A scoped build that proves value in your real data and tools before you scale spend or headcount.",
   },
   {
     id: "integration",
     number: "03",
-    title: "Integration",
+    title: "Rollout & integration",
     description:
-      "Seamless deployment into your existing infrastructure and workflows",
+      "Production cutover into your systems and workflows-security, handoffs, and training included.",
   },
   {
     id: "optimization",
     number: "04",
-    title: "Optimization",
-    description: "Continuous refinement for maximum performance",
+    title: "Measure & iterate",
+    description:
+      "KPIs, ownership, and a feedback loop so automation keeps paying off after go-live.",
   },
 ];
 
@@ -39,26 +42,30 @@ const serviceStepsDe: ServiceStep[] = [
   {
     id: "strategy",
     number: "01",
-    title: "Strategie",
-    description: "KI-Roadmap, abgestimmt auf Ihre Geschäftsziele",
+    title: "Discovery & Roadmap",
+    description:
+      "Priorisierte Use Cases, Grenzen und Verantwortliche – damit klar ist, was zuerst pilotiert wird und wann Sie fertig sind.",
   },
   {
     id: "development",
     number: "02",
-    title: "Entwicklung",
-    description: "Maßgeschneiderte KI-Lösungen für Ihre konkreten Herausforderungen",
+    title: "Pilot & Umsetzung",
+    description:
+      "Ein begrenzter Build, der Nutzen in Ihren echten Daten und Tools zeigt, bevor Sie Budget oder Personal hochziehen.",
   },
   {
     id: "integration",
     number: "03",
-    title: "Integration",
-    description: "Nahtlose Einbindung in Ihre bestehende Infrastruktur und Workflows",
+    title: "Rollout & Integration",
+    description:
+      "Produktiver Einschub in Ihre Systeme und Abläufe – inkl. Security, Übergaben und Schulung.",
   },
   {
     id: "optimization",
     number: "04",
-    title: "Optimierung",
-    description: "Kontinuierliche Verfeinerung für maximale Performance",
+    title: "Messen & iterieren",
+    description:
+      "KPIs, Ownership und ein Feedback-Loop, damit Automatisierung nach dem Go-live weiter Nutzen liefert.",
   },
 ];
 

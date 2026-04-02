@@ -29,6 +29,7 @@ const About = async () => {
               {t("visionTitleAfter")}
             </h2>
             <p className="leading-relaxed text-muted">{t("visionLead")}</p>
+            <p className="leading-relaxed text-muted">{t("missionLead")}</p>
 
             <div className="grid grid-cols-2 gap-6 pt-6">
               <div className="glass rounded-xl p-6">
