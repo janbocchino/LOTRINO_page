@@ -137,9 +137,8 @@
   "useCasesPage": {
     "title": "Use Cases",
     "description": "Industry-specific use cases: recruiting, logistics, healthcare, law firms, facility management — and what can realistically be automated.",
-    "label": "Use cases",
     "heading": "Use Cases",
-    "intro": "Where repetitive work piles up most — and automation and AI levers that are realistic. Choose an industry for details.",
+    "intro": "Where repetitive work piles up most - and automation and AI levers that are realistic. Choose an industry for details.",
     "readMore": "Read more",
     "metaTitle": "Use Cases",
     "metaDescription": "Industry-specific use cases: recruiting, logistics, healthcare, law firms, facility management — and what can realistically be automated."
