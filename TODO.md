@@ -1,1 +1,0 @@
-- Gescheiten Team Text
