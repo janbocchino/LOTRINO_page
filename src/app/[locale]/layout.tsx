@@ -15,6 +15,7 @@ import {
   openGraphImageUrl,
 } from "@/lib/site";
 import { routing, type AppLocale } from "@/i18n/routing";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -135,6 +136,7 @@ export default async function LocaleLayout({
   };
 
   const tCommon = await getTranslations({ locale, namespace: "common" });
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
   return (
     <html id="top" lang={locale} className="scroll-smooth">
@@ -160,6 +162,7 @@ export default async function LocaleLayout({
           </main>
           <Footer />
         </NextIntlClientProvider>
+        {gaId ? <GoogleAnalytics gaId={gaId} /> : null}
       </body>
     </html>
   );
