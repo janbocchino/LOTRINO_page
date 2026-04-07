@@ -32,7 +32,7 @@
     "badge": "Strategy · build · automation",
     "titleLine1": "AI that fits",
     "titleLine2": "your operations",
-    "subtitle": "We tie strategy and delivery to the software you run today - CRM, shops, line-of-business tools-so wins are measurable and teams still know what the system did.",
+    "subtitle": "We tie strategy and delivery to the software you run today - CRM, shops, line-of-business tools, so wins are measurable and teams still know what the system did.",
     "cta": "Start a conversation"
   },
   "services": {
@@ -76,7 +76,7 @@
     "visionTitleBefore": "Less repetitive work, ",
     "visionTitleHighlight": "more judgment calls",
     "visionTitleAfter": "",
-    "visionLead": "We want teams to spend their time on decisions only humans should make-not on copy-paste between tools.",
+    "visionLead": "We want teams to spend their time on decisions only humans should make - not on copy-paste between tools.",
     "missionLead": "We help you pick a first win, ship it in production, and keep automation explainable for leadership and day-to-day ops.",
     "statHuman": "Human-Centered",
     "statPoss": "Possibilities",
@@ -111,7 +111,7 @@
     "janRole": "Co-founder · Product & AI",
     "mattisRole": "Co-founder · Delivery & systems",
     "janBio": "Former EY, with long experience in technical consulting across complex client environments. He sets product direction and makes AI legible for leadership teams -while advancing his expertise through AI studies at Johannes Kepler University Linz.",
-    "mattisBio": "He turns roadmaps into production-grade systems: architecture, integration, and the operational rigor that keeps automation valuable after go-live.",
+    "mattisBio": "Mattis analyzed, modeled, and optimized processes before AI automation was a buzzword. His business informatics studies and consulting experience at Senacor taught him one thing: the best solution is the one nobody notices anymore because it just works.",
     "janAlt": "Portrait of Jan Bocchino, co-founder of LOTRINO.",
     "mattisAlt": "Portrait of Mattis Scherbacher, co-founder of LOTRINO, at an outdoor cafe."
   },
@@ -154,7 +154,7 @@
   },
   "terms": {
     "title": "Terms & Conditions",
-    "subtitle": "(Software Development & IT Services – B2B)",
+    "subtitle": "(Software Development & IT Services - B2B)",
     "description": "Terms and conditions for software development and IT services (B2B)."
   }
 }

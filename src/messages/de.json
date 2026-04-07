@@ -25,27 +25,27 @@
   },
   "meta": {
     "homeTitle": "KI-Strategie & Umsetzung",
-    "homeDescription": "Priorisierte Piloten, produktionsreife Umsetzung und Einbindung in Ihre bestehenden Systeme – damit Automatisierung praktisch bleibt und nach dem Go-live Verantwortliche haben.",
+    "homeDescription": "Priorisierte Piloten, produktionsreife Umsetzung und Einbindung in Ihre bestehenden Systeme - damit Automatisierung praktisch bleibt und nach dem Go-live Verantwortliche haben.",
     "keywords": "KI-Beratung, Workflow-Automatisierung, KI-Implementierung, maschinelles Lernen, operative Prozesse"
   },
   "hero": {
     "badge": "Strategie · Umsetzung · Automatisierung",
     "titleLine1": "KI, die zu",
     "titleLine2": "Ihren Prozessen passt",
-    "subtitle": "Wir verbinden Strategie und Lieferung mit der Software, die Sie heute nutzen – CRM, Shops, Fachverfahren – damit Erfolge messbar sind und Teams nachvollziehen, was das System getan hat.",
+    "subtitle": "Wir verbinden Strategie und Lieferung mit der Software, die Sie heute nutzen - CRM, Shops, Fachverfahren - damit Erfolge messbar sind und Teams nachvollziehen, was das System getan hat.",
     "cta": "Gespräch vereinbaren"
   },
   "services": {
     "label": "Unsere Leistungen",
     "headingBefore": "Strategie, Traction,",
     "headingMuted": "dann Systeme",
-    "intro": "Wir starten mit dem, was in Ihrem Stack realistisch ist, fahren enge Piloten und integrieren und messen danach – damit Schwung entsteht, bevor die Roadmap feststeht.",
-    "outro": "Sagen Sie uns, wo die Arbeit ansteht – wir helfen Ihnen, den ersten Erfolg zu skizzieren.",
+    "intro": "Wir starten mit dem, was in Ihrem Stack realistisch ist, fahren enge Piloten und integrieren und messen danach - damit Schwung entsteht, bevor die Roadmap feststeht.",
+    "outro": "Sagen Sie uns, wo die Arbeit ansteht - wir helfen Ihnen, den ersten Erfolg zu skizzieren.",
     "cta": "Sprechen wir!",
     "steps": {
       "strategy": {
         "title": "Discovery & Roadmap",
-        "description": "Priorisierte Use Cases, Grenzen und Verantwortliche – damit klar ist, was zuerst pilotiert wird und wann Sie fertig sind."
+        "description": "Priorisierte Use Cases, Grenzen und Verantwortliche - damit klar ist, was zuerst pilotiert wird und wann Sie fertig sind."
       },
       "development": {
         "title": "Pilot & Umsetzung",
@@ -53,7 +53,7 @@
       },
       "integration": {
         "title": "Rollout & Integration",
-        "description": "Produktiver Einschub in Ihre Systeme und Abläufe – inkl. Security, Übergaben und Schulung."
+        "description": "Produktiver Einschub in Ihre Systeme und Abläufe - inkl. Security, Übergaben und Schulung."
       },
       "optimization": {
         "title": "Messen & iterieren",
@@ -76,7 +76,7 @@
     "visionTitleBefore": "Weniger Routine, ",
     "visionTitleHighlight": "mehr Urteilsvermögen",
     "visionTitleAfter": "",
-    "visionLead": "Teams sollen Zeit für Entscheidungen haben, die Menschen treffen müssen – nicht für Copy-Paste zwischen Tools.",
+    "visionLead": "Teams sollen Zeit für Entscheidungen haben, die Menschen treffen müssen - nicht für Copy-Paste zwischen Tools.",
     "missionLead": "Wir helfen Ihnen, den ersten Erfolg zu wählen, ihn produktiv auszurollen und Automatisierung für Führung und Fachbereiche erklärbar zu halten.",
     "statHuman": "Mensch im Mittelpunkt",
     "statPoss": "Möglichkeiten",
@@ -84,7 +84,7 @@
     "approachTitleBefore": "Ein roter Faden von der ",
     "approachTitleHighlight": "Roadmap bis zum laufenden System",
     "approachTitleAfter": "",
-    "approachLead": "Zwei Gründer: Produkt und KI auf der einen Seite, Umsetzung und Systeme auf der anderen – damit die Strategie nicht nach dem Workshop verpufft.",
+    "approachLead": "Zwei Gründer: Produkt und KI auf der einen Seite, Umsetzung und Systeme auf der anderen - damit die Strategie nicht nach dem Workshop verpufft.",
     "values": ["Klare Sprache", "Umsetzung statt Folien", "Dauerhafter Nutzen"]
   },
   "contact": {
@@ -92,7 +92,7 @@
     "titleBefore": "Einen ",
     "titleHighlight": "Piloten abstecken",
     "titleAfter": "?",
-    "intro": "Schreiben Sie uns, wo Arbeit ansteht und welche Systeme im Spiel sind – wir antworten mit konkreten nächsten Schritten, nicht mit Standard-Folien.",
+    "intro": "Schreiben Sie uns, wo Arbeit ansteht und welche Systeme im Spiel sind - wir antworten mit konkreten nächsten Schritten, nicht mit Standard-Folien.",
     "name": "Name",
     "email": "E-Mail",
     "message": "Nachricht",
@@ -111,7 +111,7 @@
     "janRole": "Mitgründer · Produkt & KI",
     "mattisRole": "Mitgründer · Umsetzung & Systeme",
     "janBio": "Ehemals bei EY, mit langjähriger Erfahrung in der technischen Beratung in anspruchsvollen Mandantenumfeldern. Er prägt Produkt und KI-Roadmaps und macht KI für Führungsteams greifbar - parallel vertieft er sein Fachwissen im KI-Studium an der Johannes Kepler Universität Linz.",
-    "mattisBio": "Er übersetzt Roadmaps in produktionsreife Systeme: Architektur, Integration und operative Disziplin, damit Automatisierung nach dem Go-live weiter Nutzen liefert.",
+    "mattisBio": "Mattis hat Prozesse analysiert, modelliert und optimiert - bevor KI-Automatisierung ein Buzzword war. Sein Studium der Wirtschaftsinformatik und seine Beratungserfahrung bei Senacor haben ihm eines beigebracht: Die beste Lösung ist die, die niemand mehr merkt, weil sie einfach läuft.",
     "janAlt": "Porträt von Jan Bocchino, Mitgründer von LOTRINO.",
     "mattisAlt": "Porträt von Mattis Scherbacher, Mitgründer von LOTRINO, in einem Café im Freien."
   },
@@ -154,7 +154,7 @@
   },
   "terms": {
     "title": "Allgemeine Geschäftsbedingungen",
-    "subtitle": "(Softwareentwicklung & IT-Dienstleistungen – B2B)",
+    "subtitle": "(Softwareentwicklung & IT-Dienstleistungen - B2B)",
     "description": "AGB für Softwareentwicklung und IT-Dienstleistungen (B2B)."
   }
 }

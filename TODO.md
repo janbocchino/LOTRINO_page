@@ -1,5 +1,1 @@
-- improve solutions 
-- improve mission, it currently sounds like AI slop
-- get rid of AI slop
-- Services are to generic i dhave to get a traction and strategy feeling
 - Gescheiten Team Text
